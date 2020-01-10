@@ -1,0 +1,1348 @@
+﻿@charset "UTF-8";
+/*author : yrw*/
+.lf {
+  float: left;
+}
+
+.rt {
+  float: right;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+ul.clearfix li {
+  float: left;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  font-size: 14px;
+}
+
+li a,
+li a:hover,
+.a-default,
+.a-default:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*thea左侧自定义漂浮*/
+#msRfloat {
+  width: 135px;
+  height: 400px;
+  background: url(../images/gjfloat_r.png) no-repeat;
+  position: fixed;
+  right: 5px;
+  top: 20%;
+  z-index: 9999;
+}
+
+#msRfloat a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*页面头部*/
+.page-top .logo {
+  width: 1200px;
+  height: 81px;
+  margin: 0 auto;
+  margin-bottom: 1px;
+}
+.page-top .logo .lf {
+  line-height: 80px;
+}
+.page-top .logo a {
+  display: inline-block;
+  line-height: 80px;
+}
+.page-top .logo a.logo-bg img {
+  max-width: 100%;
+  max-height: 80px;
+  margin-right: 17px;
+}
+.page-top .logo a span {
+  font-size: 18px;
+  position: relative;
+  top: 6px;
+}
+
+.page-top .logo .rt {
+  margin-right: 250px;
+  position: relative;
+}
+.page-top .rt > div {
+  display: inline-block;
+}
+.page-top .rt > div .tel-num {
+  position: absolute;
+  top: 0;
+  left: 84px;
+  width: 320px;
+  font-size: 26px;
+  color: #ff8838;
+}
+.page-top .enroll-content {
+  position: relative;
+  padding-right: 15px;
+  margin-right: 12px;
+  border-right: 1px solid #e9e9e9;
+  top: 18px;
+}
+.page-top .enroll-content .enroll {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff8838;
+}
+.page-top .enroll-content .enroll span {
+  padding-left: 24px;
+  background: url(../images/tel.png) no-repeat;
+}
+.page-top .enroll-content .hotline {
+  color: #999;
+}
+.page-top .nav {
+  border-top: 1px solid #eee;
+}
+.page-top .nav ul {
+  width: 1200px;
+  margin: 0 auto;
+}
+.page-top .nav ul li {
+  font-size: 12px;
+  padding: 16px 0px;
+}
+.page-top .nav ul li a {
+  padding: 0 34px;
+  border-right: 1px solid #dadada;
+  font-size: 16px;
+}
+.page-top .nav ul li:hover,
+.page-top .nav ul li.active {
+  background-color: #543b89;
+}
+.page-top .nav ul li:hover a,
+.page-top .nav ul li.active a {
+  color: #fff;
+  border-color: #543b89;
+}
+.page-top .banner {
+  overflow: hidden;
+}
+.page-top .banner a {
+  height: 400px;
+}
+.page-top .banner a img {
+  height: 100%;
+}
+
+/*页面主体*/
+.page-body .school-index-intro {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #f1f1f1;
+}
+.page-body .school-index-intro .bd {
+  line-height: 36px;
+  color: #666;
+}
+.page-body .school-index-intro .bd em {
+  color: #ff7f29;
+}
+.page-body .school-index-intro .bd .txt {
+  text-indent: 30px;
+  text-align: justify;
+}
+.page-body .school-index-intro .wrap > .lf {
+  width: 600px;
+  margin-right: 50px;
+}
+.page-body .school-index-intro .wrap > .rt {
+  width: 550px;
+}
+.page-body .school-index-intro .img-container {
+  margin-right: -30px;
+  *margin-right: -80px;
+  margin-bottom: 60px;
+}
+.page-body .school-index-intro .img-container li {
+  margin-right: 30px;
+  width: 380px;
+  padding: 8px 8px 0 8px;
+  background-color: #fff;
+}
+.page-body .school-index-intro .img-container li h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.page-body .school-index-intro .img-container li .txt {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: justify;
+  color: #999;
+  height: 84px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.page-body .school-index-intro .teacheraInfo {
+  padding: 36px 50px 18px 40px;
+  background-color: #fff;
+}
+.page-body .school-index-intro .teacheraInfo .author-item {
+  display: none;
+}
+.page-body .school-index-intro .teacheraInfo .author-item h2 {
+  font-size: 22px;
+  color: #ff8838;
+}
+.page-body .school-index-intro .teacheraInfo .content {
+  line-height: 32px;
+  height: 68px;
+  width: 1100px;
+  overflow: auto;
+  color: #666;
+  margin: 20px 0;
+}
+.page-body .school-index-intro .teacheraInfo .show {
+  display: block;
+}
+.page-body .school-index-intro .teacheraInfo .author {
+  position: relative;
+}
+.page-body .school-index-intro .teacheraInfo .author ul {
+  margin-right: -42px;
+}
+.page-body .school-index-intro .teacheraInfo .author ul li {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-right: 42px;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.page-body .school-index-intro .teacheraInfo .author ul li.active {
+  border: 2px solid #ffa200;
+}
+.page-body .school-index-intro .teacheraInfo .author ul li img {
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.page-body .school-index-intro .teacheraInfo .author ul li i {
+  position: absolute;
+  top: -14px;
+  display: block;
+  width: 100%;
+  height: 14px;
+}
+.page-body .school-index-intro .teacheraInfo .author ul li i.active {
+  background: url("../images/iconfont-jt.png") no-repeat 50% 0;
+}
+.page-body .school-index-intro .teacheraInfo .author .more {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 574px;
+}
+.page-body .hasline {
+  border-bottom: 1px solid #f0efef;
+}
+.page-body .school-index-content {
+  padding: 60px 0;
+}
+.page-body .school-index-content .lf {
+  width: 400px;
+}
+.page-body .school-index-content .lf img {
+  width: 400px !important;
+  height: auto !important;
+}
+.page-body .school-index-content .rt {
+  margin-left: 40px;
+  width: 750px;
+}
+.page-body .school-index-content .rt .title {
+  font-size: 22px;
+  color: #666;
+  padding-bottom: 24px;
+}
+.page-body .school-index-content .rt .title .a-default {
+  margin-left: 30px;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #999;
+  background: url(../images/write.png) no-repeat 0% 40%;
+}
+.page-body .school-index-content .rt .cousre-setting {
+  padding-bottom: 18px;
+  text-indent: -12px;
+}
+.page-body .school-index-content .rt .bd .txt {
+  line-height: 32px;
+  text-indent: 30px;
+  text-align: justify;
+  color: #666;
+  margin-bottom: 14px;
+}
+.page-body .school-index-content .rt .consult {
+  width: 100%;
+  line-height: 34px;
+  background-color: #f6f6f6;
+}
+.page-body .school-index-content .rt .consult .a-default {
+  margin-left: 18px;
+  padding-left: 18px;
+  padding-right: 15px;
+  font-size: 14px;
+  color: #999;
+}
+.page-body .school-index-content .rt .consult .test {
+  background: url(../images/write.png) no-repeat 0% 40%;
+}
+.page-body .school-index-content .rt .consult .zx {
+  background: url(../images/message.png) no-repeat 0% 40%;
+}
+.page-body .index-stutdent-info {
+  padding: 16px 0 16px 0;
+  line-height: 36px;
+}
+.page-body .index-stutdent-info .lf {
+  margin-right: 26px;
+}
+.page-body .index-stutdent-info .lf p {
+  width: 420px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #666;
+}
+.page-body .index-stutdent-info .lf p .direction {
+  display: inline-block;
+  width: 70px;
+  padding-left: 4px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+  background: url(../images/bg-direction.png) no-repeat;
+  color: #ff8838;
+}
+.page-body .index-stutdent-info .lf span {
+  color: #999;
+}
+.page-body .index-stutdent-info .rt {
+  margin-left: 0;
+  width: 300px;
+}
+.page-body .index-stutdent-info .rt p {
+  color: #666;
+}
+.page-body .index-stutdent-info .rt span {
+  color: #999;
+}
+.page-body .tel-div {
+  line-height: 40px;
+}
+.page-body .tel-div .commonBtn {
+  margin-right: 18px;
+  margin-top: 0px;
+}
+.page-body .tel-div .tel {
+  display: inline-block;
+  margin-left: 10px;
+  padding-left: 24px;
+  background: url(../images/tel.png) no-repeat 0% 50%;
+  font-size: 16px;
+  color: #666;
+}
+.page-body .tel-div .tel .tel-num {
+  font-size: 20px;
+  color: #ff8838;
+  vertical-align: bottom;
+}
+.page-body .trends-news {
+  margin: 60px 0 30px 0;
+}
+.page-body .trends-news .hd {
+  padding-bottom: 12px;
+  border-bottom: dotted 1px #d2d2d2;
+}
+.page-body .trends-news .news {
+  width: 700px;
+}
+.page-body .trends-news .more {
+  float: right;
+}
+.page-body .trends-news .rt {
+  width: 450px;
+}
+.page-body .trends-news .news-container {
+  padding: 10px 0px 0px 10px;
+  border-bottom: 1px dotted #d2d2d2;
+}
+.page-body .trends-news .news-container li {
+  margin-bottom: 12px;
+}
+.page-body .trends-news .news-container .news-date {
+  padding: 12px 8px;
+  *padding: 2px 2px;
+  width: 72px;
+  height: 70px;
+  text-align: center;
+  background-color: #533797;
+}
+.page-body .trends-news .news-container .news-date .time {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #6b53a6;
+}
+.page-body .trends-news .news-container .news-date .date {
+  display: block;
+  color: #cab6fd;
+  margin-top: 4px;
+}
+.page-body .trends-news .news-container .news-content {
+  padding: 0px 30px 0px 20px;
+  *padding: 0 0 0 10px;
+  margin: 12px 0;
+  border-right: 1px solid #d7d7d7;
+}
+.page-body .trends-news .news-container .news-content p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  width: 430px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page-body .trends-news .news-container .news-content span {
+  display: inline-block;
+  font-size: 12px;
+  color: #999;
+  width: 510px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page-body .trends-news .news-container .news-details {
+  width: 56px;
+  *width: 28px;
+  *padding-left: 10px;
+  text-align: center;
+  line-height: 72px;
+}
+.page-body .trends-news .news-container .news-details a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.page-body .trends-news .que-container {
+  font-size: 14px;
+}
+.page-body .trends-news .que-container li {
+  width: 100%;
+  padding-left: 34px;
+  height: 44px;
+  line-height: 44px;
+  border-bottom: dotted 1px #d2d2d2;
+  background: url(../images/inquiry.png) no-repeat 0% 50%;
+}
+.page-body .trends-news .que-container li a {
+  display: inline-block;
+  width: 380px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page-body .percent .percent-lf {
+  position: absolute;
+  top: 50px;
+  *top: 40%;
+  left: 16px;
+  *left: 20%;
+  background-color: #55a1ff;
+  margin-right: 10px;
+}
+.page-body .percent .percent-rt {
+  top: 50px;
+  *top: 40%;
+  right: 16px;
+  *right: 10%;
+  position: absolute;
+  background-color: #4ed694;
+  margin-left: 10px;
+}
+
+/*主体body*/
+.friend {
+  padding-top: 30px;
+}
+
+.friend .lian {
+  margin-right: -20px;
+  *margin-right: 0px;
+  *padding-bottom: 20px;
+}
+
+.friend li {
+  padding: 8px 12px;
+  margin-right: 20px;
+  margin-bottom: 18px;
+  background-color: #f0f0f0;
+  color: #666;
+  *min-width: 100px;
+}
+
+.hd {
+  font-size: 26px;
+  color: #444;
+  padding-bottom: 30px;
+}
+.hd em {
+  color: #6745a6;
+}
+.hd small {
+  padding-left: 10px;
+  font-size: 24px;
+  color: #d1d1d1;
+}
+
+.blue-bar-x {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #ff8838;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+input::-webkit-input-placeholder {
+  /*WebKit browsers*/
+  color: #999;
+}
+
+input::-moz-input-placeholder {
+  /*Mozilla Firefox*/
+  color: #999;
+}
+
+input::-ms-input-placeholder {
+  /*Internet Explorer*/
+  color: #999;
+}
+
+.collect ul {
+  margin-right: -50px;
+}
+.collect ul input {
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+.collect input {
+  width: 264px;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 8px;
+  background-color: #ffffff;
+  border: none;
+}
+.collect input[type="submit"] {
+  width: 100%;
+  line-height: 40px;
+  background-color: #ff8838;
+  color: #fff;
+}
+.collect select {
+  background: transparent;
+  border: solid 1px #e5e5e5;
+  padding-left: 8px;
+  height: 44px;
+  outline: none;
+}
+.collect .sel-grade {
+  width: 264px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.commonBtn {
+  width: 140px;
+  line-height: 40px;
+  border: 1px solid #ff8838;
+  color: #ff8838;
+  background-color: #fff;
+}
+
+.btn-active {
+  background-color: #ff8838;
+  border: 1px solid #ff8838;
+  color: #fff;
+}
+
+/*快速报名*/
+.fast-sign {
+  padding-top: 35px;
+}
+.fast-sign .collect {
+  margin-left: 8px;
+  width: 300px;
+  padding: 28px 22px 0px 22px;
+  *padding: 12px 0;
+  *text-align: center;
+  background-color: #533797;
+}
+.fast-sign .collect h2 {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+.fast-sign .collect input {
+  margin: 0 auto;
+  *margin: 0;
+  *padding: 0;
+  width: 100%;
+  *width: 256px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.fast-sign .collect .index-fast {
+  margin-bottom: 43px;
+}
+
+/* 页脚 */
+#footer {
+  padding: 15px 0 50px;
+  background: #fafafa;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+  color: #666;
+}
+
+#footer .dib-wrap .dib {
+  margin: 0 5px;
+  font-size: 12px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  display: inline;
+}
+
+#footer .links {
+  color: #ddd;
+}
+
+#footer p {
+  margin: 5px 0;
+}
+
+#footer .links a {
+  margin: 0 10px;
+  color: #333;
+}
+
+/*统计图*/
+.chart {
+  position: relative;
+  margin-left: 160px;
+}
+.chart #main {
+  width: 180px;
+  height: 145px;
+  background: url(../images/chart.jpg) no-repeat 50% 0%;
+}
+
+.chart-txt {
+  position: absolute;
+  *left: 130px;
+  bottom: 2px;
+  width: 180px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+}
+
+.percent {
+  position: relative;
+  width: 180px;
+  height: 145px;
+  line-height: 145px;
+  text-align: center;
+  margin-left: 30px;
+}
+.percent div {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 18px;
+  color: #fff;
+}
+.percent .percent-lf {
+  position: absolute;
+  top: 76px;
+  *top: 40%;
+  left: 96px;
+  *left: 30%;
+  background-color: #55a1ff;
+  margin-right: 10px;
+}
+.percent .percent-rt {
+  top: 76px;
+  *top: 40%;
+  right: 16px;
+  *right: 10%;
+  position: absolute;
+  background-color: #4ed694;
+  margin-left: 10px;
+}
+.percent .dotted {
+  font-size: 24px;
+}
+
+.bread {
+  height: 36px;
+  line-height: 36px;
+  color: #999;
+}
+.bread p {
+  padding-left: 28px;
+  background: url(../images/index.jpg) no-repeat 0% 40%;
+}
+.bread p a {
+  color: #999;
+}
+.bread p a:hover {
+  text-decoration: none;
+}
+.bread p em {
+  color: #333;
+}
+
+i.degree,
+i.star {
+  height: 12px;
+}
+
+.degree {
+  width: 65px;
+  display: inline-block;
+  background: url(../images/degree.png) no-repeat 0px 0px;
+}
+.degree .star {
+  width: 70%;
+  display: block;
+  overflow: hidden;
+  background: url(../images/degree.png) no-repeat 0px -15px;
+}
+
+/******************详情页部分*/
+.main {
+  padding: 20px 0;
+  background-color: #f1f1f1;
+  /*友情链接*/
+}
+.main .aside {
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: -20px;
+}
+.main .aside > div {
+  padding: 20px 16px;
+}
+.main .aside .process {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.main .aside .process .title {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.main .aside .process ul.sign {
+  margin: 20px 0 -28px 14px;
+  background: url(../images/dotted.png) no-repeat 21px 24px;
+}
+.main .aside .process ul.sign li {
+  position: relative;
+  margin-bottom: 28px;
+}
+.main .aside .process ul.sign li > span {
+  display: inline-block;
+}
+.main .aside .process ul.sign li .step {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin-right: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #666;
+}
+.main .aside .process ul.sign li .content {
+  margin-right: 18px;
+  font-size: 16px;
+}
+.main .aside .process ul.sign li .tel {
+  position: absolute;
+  left: 66px;
+  top: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff8838;
+}
+.main .aside .process ul.sign li .enroll {
+  width: 76px;
+  line-height: 22px;
+  text-align: center;
+  background-color: #ff8838;
+}
+.main .aside .process ul.sign li .enroll a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.main .aside .process ul.dynamic {
+  list-style-type: disc;
+  color: #ff8838;
+  padding: 20px 0 0 20px;
+  margin-bottom: -20px;
+}
+.main .aside .process ul.dynamic li {
+  position: relative;
+  vertical-align: top;
+  margin-bottom: 28px;
+}
+.main .aside .process ul.dynamic li p {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+}
+.main .aside .fast-sign {
+  padding: 0;
+  margin-bottom: 20px;
+}
+.main .aside .fast-sign .collect {
+  background: url(../images/signUp.png) no-repeat 0% 0%;
+}
+.main .aside .fast-sign .collect h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.main .setting-introduce {
+  background-color: #fff;
+}
+.main .team-introduce {
+  min-height: 1454px;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+.main .team-introduce .show {
+  display: none;
+}
+.main .article {
+  width: 880px;
+  float: right;
+}
+.main .article .top {
+  margin-bottom: 20px;
+}
+.main .article .caption {
+  padding: 20px 16px 0px 14px;
+  background-color: #fff;
+}
+.main .article .caption .title {
+  border-bottom: 1px solid #e2e2e2;
+}
+.main .article .caption .title h3 {
+  font-size: 18px;
+  padding-left: 14px;
+  margin-bottom: 14px;
+  border-left: 2px solid #ff8838;
+}
+.main .article .caption .title h3 em {
+  color: #ff8838;
+}
+.main .article .basic-info {
+  padding: 34px 16px 16px 32px;
+  background-color: #fff;
+}
+.main .article .basic-info ul {
+  max-width: 700px;
+}
+.main .article .basic-info ul li {
+  min-width: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: #999;
+}
+.main .article .introduce {
+  background-color: #fff;
+}
+.main .article .introduce .detail {
+  padding: 20px 28px 28px 32px;
+}
+.main .article .introduce .detail p,
+.main .article .introduce .detail span,
+.main .article .introduce .detail li {
+  line-height: 31px;
+  text-align: justify;
+  color: #666;
+}
+.main .article .introduce .detail .no-indent {
+  text-indent: 0;
+}
+.main .article .introduce .detail .no-margin {
+  margin-bottom: 0;
+}
+.main .article .introduce .detail p {
+  margin-bottom: 10px;
+  text-indent: 28px;
+}
+.main .article .introduce .detail .img {
+  margin-top: -16px;
+  text-align: center;
+}
+.main .article .introduce .detail em {
+  font-weight: 700;
+  color: #333;
+}
+.main .article .introduce .detail .summary {
+  display: block;
+  line-height: 30px;
+  margin-top: 40px;
+  font-weight: 700;
+  text-indent: 0;
+  color: #533797;
+}
+.main .article .introduce .detail .summary-no-margin {
+  display: block;
+  line-height: 30px;
+  font-weight: 700;
+  text-indent: 0;
+  color: #533797;
+}
+.main .article .introduce .detail .indent {
+  display: block;
+  text-indent: 28px;
+}
+.main .article .introduce .detail .marginTop {
+  margin-top: 40px;
+}
+.main .article .introduce .detail .marginTop span {
+  display: block;
+}
+.main .article .introduce .detail .bright-point {
+  margin-bottom: 16px;
+}
+.main .article .introduce .set-detail {
+  display: none;
+}
+.main .article .introduce .setting-nav {
+  background-color: #e5e5e5;
+}
+.main .article .introduce .setting-nav li {
+  padding: 12px 20px;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+}
+.main .article .introduce .setting-nav li.active,
+.main .article .introduce .setting-nav li:hover {
+  background-color: #543b89;
+}
+.main .article .introduce .setting-nav li.active a,
+.main .article .introduce .setting-nav li:hover a {
+  color: #fff;
+}
+.main .article .introduce .setting-nav li a {
+  color: #666;
+}
+.main .article .introduce .data-img {
+  padding: 40px 0 60px 0;
+}
+.main .article .introduce .data-img .chart {
+  margin: 0 80px 0 100px;
+}
+.main .article .introduce .data-img .chart #main {
+  width: 200px;
+  height: 200px;
+  background: url(../images/chart.jpg) no-repeat 50% 50%;
+}
+.main .article .introduce .data-img .percent {
+  min-width: 300px;
+  height: 200px;
+  line-height: 200px;
+  margin-left: 0;
+  padding-left: 80px;
+  border-left: 1px dotted #dcdcdc;
+}
+.main .article .introduce .data-img .chart-txt {
+  width: 200px;
+}
+.main .article .introduce .team-detail {
+  padding: 0 15px;
+  background-color: #fff;
+}
+.main .article .introduce .team-detail .title {
+  width: 100%;
+  line-height: 38px;
+  background-color: #e5e5e5;
+}
+.main .article .introduce .team-detail .title p {
+  width: 100px;
+  text-align: center;
+  background-color: #543b89;
+  color: #fff;
+}
+.main .article .introduce .team-detail .team-content {
+  padding: 30px 0;
+  margin: 0 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+.main .article .introduce .team-detail .team-content .lf {
+  margin-right: 40px;
+}
+.main .article .introduce .team-detail .team-content .rt {
+  width: 616px;
+}
+.main .article .introduce .team-detail .team-content .rt h3 {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.main .article .introduce .team-detail .team-content .rt h3 span {
+  padding-right: 22px;
+}
+.main .article .introduce .team-detail .team-content .rt h3 small {
+  display: inline-block;
+  font-size: 14px;
+  height: 24px;
+  vertical-align: middle;
+  color: #ff8838;
+}
+.main .article .introduce .team-detail .team-content .rt p {
+  line-height: 26px;
+  text-align: justify;
+  color: #777;
+}
+.main .article .introduce .team-detail .open-more {
+  text-align: center;
+  height: 40px;
+  margin: 0 15px;
+}
+.main .article .introduce .team-detail .open-more button {
+  width: 100%;
+  height: 100%;
+  background-color: #e6e5e5;
+}
+.main .article .introduce .team-detail .open-more button span {
+  padding-right: 12px;
+  font-weight: 700;
+  color: #999;
+  background: url(../images/jiantou.jpg) no-repeat 100% 3px;
+}
+.main .article .introduce .team-detail .open-more button span.hidden {
+  background: url(../images/up.jpg) no-repeat 100% 3px;
+}
+.main .article .introduce .scene-img {
+  padding: 28px 30px 0 20px;
+}
+.main .article .introduce .scene-img ul {
+  margin-right: -22px;
+}
+.main .article .introduce .scene-img ul li {
+  margin: 0 22px 38px 0;
+}
+.main .article .introduce .scene-img ul li .txt {
+  padding-top: 12px;
+  text-align: center;
+  color: #666;
+}
+.main .article .introduce .news-page {
+  padding: 0 14px;
+}
+.main .article .introduce .news-page .news-item li {
+  cursor: pointer;
+  padding: 30px 24px 32px 15px;
+  border-bottom: 1px dotted #dcdcdc;
+}
+.main .article .introduce .news-page .news-item li:hover {
+  background-color: #eee;
+}
+.main .article .introduce .news-page .news-item li:hover .time,
+.main .article .introduce .news-page .news-item li:hover .news-content h3 {
+  color: #ff8838;
+}
+.main .article .introduce .news-page .news-item li .news-date {
+  margin-right: 30px;
+  text-align: center;
+}
+.main .article .introduce .news-page .news-item li .news-date .time {
+  font-size: 34px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.main .article .introduce .news-page .news-item li .news-date .date {
+  color: #a6a6a6;
+}
+.main .article .introduce .news-page .news-item li .news-content {
+  width: 720px;
+}
+.main .article .introduce .news-page .news-item li .news-content h3 {
+  font-size: 16px;
+  line-height: 31px;
+  padding-bottom: 18px;
+}
+.main .article .introduce .news-page .news-item li .news-content p {
+  line-height: 27px;
+  color: #989898;
+}
+.main .article .introduce .paging {
+  height: 67px;
+  line-height: 67px;
+  text-align: center;
+}
+.main .article .introduce .paging .pageDiv {
+  position: relative;
+}
+.main .article .introduce .paging .pageDiv a {
+  padding: 0px 5px;
+}
+.main .article .introduce .paging .pageDiv a.num {
+  color: #666;
+}
+.main .article .introduce .paging .pageDiv a.cur {
+  color: #4389fd;
+  text-decoration: underline;
+}
+.main .article .introduce .paging .pageDiv a.prev {
+  padding-right: 14px;
+  margin-right: 6px;
+  border-right: 1px dotted #a0a0a0;
+}
+.main .article .introduce .paging .pageDiv a.end {
+  padding-left: 14px;
+  margin-left: 6px;
+  border-left: 1px dotted #a0a0a0;
+}
+.main .article .introduce .paging .pageDiv a.original {
+  color: #999;
+}
+.main .article .introduce .paging .record {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.main .article .introduce .paging .record span {
+  color: #999;
+}
+.main .article .introduce .order-page {
+  padding: 25px 30px 0 30px;
+}
+.main .article .introduce .order-page .hint {
+  height: 74px;
+  line-height: 26px;
+  padding: 14px 90px 0 16px;
+  margin-bottom: 30px;
+  background-color: #f1f1f1;
+  color: #999;
+}
+.main .article .introduce .order-page .collect li {
+  margin-bottom: 26px;
+}
+.main .article .introduce .order-page .collect input {
+  margin: 0;
+  height: 44px;
+  width: 332px;
+  border: solid 1px #e5e5e5;
+}
+.main .article .introduce .order-page .collect input.order-submit {
+  margin-left: 126px;
+}
+.main .article .introduce .order-page .collect select {
+  width: 332px;
+  border: solid 1px #e5e5e5;
+}
+.main .article .introduce .order-page .collect button {
+  margin-left: 126px;
+  margin-top: 6px;
+  width: 144px;
+}
+.main .article .introduce .order-page .collect .name {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  margin-right: 16px;
+  width: 106px;
+  text-align: right;
+}
+.main .article .introduce .question-page {
+  padding: 0 27px;
+}
+.main .article .introduce .question-page .question-item {
+  background: url(../images/problem.png) no-repeat;
+}
+.main .article .introduce .question-page .question-item .list {
+  padding: 22px 18px 26px 36px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.main .article .introduce .question-page .question-item .list h3 {
+  font-weight: 700;
+  padding-left: 26px;
+  margin-bottom: 20px;
+  background: url(../images/doubt.jpg) no-repeat;
+}
+.main .article .introduce .question-page .question-item .list .txt {
+  line-height: 24px;
+  height: 48px;
+  overflow: hidden;
+  color: #777;
+}
+.main .article .introduce .question-page .question-item .spread {
+  text-align: right;
+}
+.main .article .introduce .question-page .question-item .spread i {
+  display: block;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  background: url(../images/open.jpg) no-repeat 100% 100%;
+}
+.main .article .introduce .question-page .question-item .spread i.closeUp {
+  background: url(../images/close.jpg) no-repeat 100% 100%;
+}
+.main .article .hi-school-outline {
+  padding: 26px 30px 50px 26px;
+  background-color: #fff;
+}
+.main .article .hi-school-outline .image-container {
+  width: 320px;
+  margin-right: 24px;
+}
+.main .article .hi-school-outline .image-container img {
+  width: 100%;
+}
+.main .article .hi-school-outline .right-section {
+  width: 480px;
+}
+.main .article .hi-school-outline .right-section .cousre-setting {
+  font-size: 22px;
+  color: #666;
+  text-indent: -12px;
+}
+.main .article .hi-school-outline .right-section .consult {
+  margin: 22px 0 28px 0;
+}
+.main .article .hi-school-outline .right-section .consult a {
+  display: inline-block;
+  position: relative;
+  border-radius: 3px;
+  padding: 2px 9px 2px 26px;
+  margin-right: 18px;
+}
+.main .article .hi-school-outline .right-section .consult a.test {
+  border: 1px solid #ff8838;
+  color: #ff8838;
+}
+.main .article .hi-school-outline .right-section .consult a.test i {
+  background: url(../images/write.png) no-repeat 50% 50%;
+}
+.main .article .hi-school-outline .right-section .consult a.zx {
+  background-color: #ff8838;
+  color: #fff;
+}
+.main .article .hi-school-outline .right-section .consult a.zx i {
+  background: url(../images/msg.png) no-repeat 50% 50%;
+}
+.main .article .hi-school-outline .right-section .consult a i {
+  position: absolute;
+  z-index: 10;
+  height: 23px;
+  width: 15px;
+  left: 7px;
+  top: 0px;
+}
+.main .article .hi-school-outline .right-section ul {
+  width: 470px;
+  margin-bottom: 13px;
+}
+.main .article .hi-school-outline .right-section ul li {
+  width: 230px;
+  line-height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main .article .hi-school-outline .right-section .tel {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 34px;
+  background: url(../images/tel.png) no-repeat 10px 50% #f4f4f4;
+  font-size: 16px;
+  color: #666;
+}
+.main .article .hi-school-outline .right-section .tel .tel-num {
+  font-size: 20px;
+  color: #ff8838;
+  vertical-align: bottom;
+}
+.main .friend {
+  margin-top: 20px;
+}
+.main .friend .wrap {
+  padding: 20px 0 0 18px;
+  background-color: #fff;
+}
+
+/*2018-08-22 添加ms_module*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
