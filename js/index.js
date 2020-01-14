@@ -56,5 +56,15 @@ $(function () {
       scrollTop: 0
     });
   });
+
+  // swiper
+  var mySwiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination', // 如果需要分页器
+    paginationClickable: true, // 点击分页器切换
+    prevButton: '.prev',
+    nextButton: '.next',
+    // autoplay: 5000,
+    speed: 1000,
+  });
 })
 

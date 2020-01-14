@@ -7,10 +7,16 @@ h3,
 ul,
 li,
 a,
-em {
+em,
+input,
+select {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+}
+
+p {
+  line-height: 1.6;
 }
 
 %clearfix {
@@ -1443,22 +1449,19 @@ ul {
 }
 
 @media screen and (max-width: 750px) {
-  body,
-  div,
-  p,
-  h1,
-  h2,
-  h3,
-  ul,
-  li,
-  a,
-  em {
-    font-size: pr(26px);
-  }
-
   $browser-default-font-size: 75px !default;
   @function pr($px) {
     @return $px / $browser-default-font-size * 1rem;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    font-size: pr(26px);
+    color: #333333;
+    padding-bottom: pr(106px);
   }
 
   // 去除前后伪类
@@ -1467,6 +1470,34 @@ ul {
     &:after {
       display: none;
     }
+  }
+
+  %wap-one {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  %wap-point {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: pr(4px);
+      height: pr(4px);
+      background-color: #7356ac;
+      vertical-align: middle;
+      margin-right: pr(12px);
+      border-radius: 50%;
+    }
+  }
+
+  // 文本显示多少行就省略
+  @mixin ells($row) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
   }
 
   .wrap {
@@ -1494,6 +1525,10 @@ ul {
     float: none;
   }
 
+  .wap-show {
+    display: block;
+  }
+
   /*页面头部*/
   .header {
     height: pr(100px);
@@ -1508,7 +1543,6 @@ ul {
       display: inline-block;
       vertical-align: middle;
       font-size: pr(24px);
-      color: #333333;
     }
     .rt {
       display: none;
@@ -1528,7 +1562,10 @@ ul {
   .nav {
     border-top: 1px solid #eee;
     padding: 0 pr(24px);
+    // background: url(../images/icon_1.png) no-repeat 90% center;
+    // background-size: auto pr(20px);
     ul {
+      width: 90%;
       @extend %clearclass;
       overflow-x: scroll;
       white-space: nowrap;
@@ -1564,24 +1601,621 @@ ul {
   }
 
   .wap-banner {
+    // display: none;
+    background-color: #f5f6f8;
+    padding: pr(24px);
     text-align: center;
+    a {
+      display: block;
+      width: 100%;
+    }
     img {
       border-radius: pr(8px);
     }
   }
 
   .school {
+    background-color: #f5f6f8;
+    padding: 0 pr(24px) pr(30px);
     .sc-head {
       font-size: pr(28px);
-      line-height: pr(34px);
+      line-height: pr(32px);
       color: #444444;
+      padding-bottom: pr(20px);
+      ul {
+        display: flex;
+      }
       li {
+        border-right: dashed 1px #4b4b4b;
+        padding: 0 pr(25px);
         &.cur {
           font-weight: bold;
           font-size: pr(32px);
         }
+        &:last-child {
+          border-right: none;
+        }
       }
     }
+    .sc-cont {
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: pr(8px);
+      padding: pr(20px) pr(40px);
+      .cont-item {
+        display: none;
+        &.cur {
+          display: block;
+        }
+      }
+      li {
+        line-height: pr(42px);
+        color: #444444;
+        .key {
+          color: #999999;
+        }
+      }
+      p {
+        font-size: pr(26px);
+        text-align: justify;
+        margin-bottom: pr(10px);
+      }
+    }
+  }
+
+  // 入学流程
+  .enrol {
+    background-color: #f5f6f8;
+    padding: 0 pr(24px) pr(20px);
+    .enrol-title {
+      font-size: pr(32px);
+      line-height: pr(34px);
+      padding: 0 pr(24px) pr(20px);
+    }
+    .enrol-cont {
+      padding: pr(162px) 0 pr(42px);
+      border-radius: pr(8px);
+      background: url(../images/bg_2.png) no-repeat center 30% #fff;
+      background-size: 90% auto;
+      ul {
+        @extend .space-around;
+      }
+    }
+  }
+
+  // 预约报名
+  .apply {
+    // display: none;
+    padding: 0 pr(24px) pr(30px);
+    background-color: #f5f6f8;
+    .apply-cont {
+      padding: pr(30px) 0;
+      background: url(../images/bg_3.png) no-repeat;
+      background-size: 100% 100%;
+      border-radius: pr(8px);
+      .cont-title {
+        font-size: pr(32px);
+        line-height: pr(34px);
+        color: #ff6600;
+        text-align: center;
+        margin-bottom: pr(20px);
+      }
+      // 纯颜色的背景
+      &.pure {
+        background: #543b89;
+        .cont-title {
+          color: #ffffff;
+          span {
+            color: #ff724f;
+          }
+        }
+      }
+    }
+    .sign-in {
+      padding: 0 pr(28px);
+      display: flex;
+      flex-wrap: wrap;
+    }
+    input,
+    select {
+      width: 48%;
+      height: pr(80px);
+      line-height: pr(80px);
+      font-size: pr(28px);
+      border-radius: pr(10px);
+      border: none;
+      margin-bottom: pr(16px);
+    }
+    select {
+      padding: 0 1em;
+      background: url(../images/sel.png) no-repeat #fff 90% center;
+      background-size: pr(17px) pr(11px);
+    }
+    input {
+      margin-right: 4%;
+      text-indent: 1em;
+    }
+    .full-line {
+      width: 100%;
+      margin-right: 0;
+    }
+    input[type="submit"] {
+      text-indent: 0;
+      background-color: #ff8838;
+      color: #fff;
+    }
+  }
+
+  // 底部悬浮
+  .wap-susp {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px pr(-9px) pr(20px) 0px rgba(145, 145, 145, 0.15);
+    border-radius: pr(30px) pr(30px) 0px 0px;
+    z-index: 200;
+    .susp-cont {
+      height: pr(106px);
+      padding: pr(26px) 0;
+      ul {
+        height: 100%;
+        @extend .space-between;
+      }
+      li {
+        width: 25%;
+        height: pr(54px);
+        border-right: 1px dotted #808080;
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: pr(-12px);
+        }
+        .icon {
+          display: block;
+          width: pr(35px);
+          height: pr(36px);
+          margin-bottom: pr(10px);
+        }
+        &:first-child {
+          .icon {
+            background: url(../images/home_nor.png) no-repeat;
+            background-size: 100% auto;
+          }
+          &.cur {
+            .icon {
+              background: url(../images/home_sel.png) no-repeat;
+              background-size: 100% auto;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          .icon {
+            background: url(../images/open_nor.png) no-repeat;
+            background-size: 100% auto;
+          }
+          &.cur {
+            .icon {
+              background: url(../images/open_sel.png) no-repeat;
+              background-size: 100% auto;
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          .icon {
+            width: pr(39px);
+            height: pr(39px);
+            background: url(../images/visit_nor.png) no-repeat;
+            background-size: 100% 100%;
+          }
+          &.cur {
+            .icon {
+              background: url(../images/visit_sel.png) no-repeat;
+              background-size: 100% auto;
+            }
+          }
+        }
+        &:nth-of-type(4) {
+          .icon {
+            width: pr(39px);
+            height: pr(40px);
+            background: url(../images/tel_nor.png) no-repeat;
+            background-size: 100% 100%;
+          }
+          &.cur {
+            .icon {
+              background: url(../images/tel_sel.png) no-repeat;
+              background-size: 100% auto;
+            }
+          }
+        }
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  // 常见问题 列表
+  .issue-list {
+    background-color: #f5f6f8;
+    padding: pr(24px) pr(24px);
+    li {
+      background-color: #ffffff;
+      border-radius: pr(8px);
+      padding: 0 pr(22px) pr(20px);
+      line-height: 1.5;
+      margin-bottom: pr(24px);
+      .item-w {
+        font-size: pr(30px);
+        border-bottom: 1px dotted #cdcdcd;
+        padding: pr(20px) 0 pr(20px) pr(52px);
+        background: url(../images/icon_2.png) no-repeat left pr(30px);
+        background-size: pr(26px) auto;
+      }
+      .item-d {
+        color: #666666;
+        padding: pr(20px) 0 0 pr(52px);
+        margin-bottom: pr(20px);
+        @include ells(3);
+        &.show {
+          display: block;
+        }
+      }
+      .fold {
+        font-size: pr(22px);
+        line-height: pr(40px);
+        color: #444444;
+        text-align: center;
+        cursor: pointer;
+        span {
+          vertical-align: middle;
+        }
+        .icon {
+          display: inline-block;
+          width: pr(18px);
+          height: pr(12px);
+          background: url(../images/down.png) no-repeat;
+          background-size: 100% 100%;
+          margin-left: pr(6px);
+          vertical-align: middle;
+        }
+      }
+      .down {
+        color: #4b4b4b;
+        .icon {
+          background: url(../images/up.png) no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    .more {
+      height: pr(80px);
+      line-height: pr(80px);
+      background-color: #e5e5e5;
+      border-radius: pr(8px);
+      font-size: pr(28px);
+      color: #444444;
+      text-align: center;
+    }
+  }
+
+  .lcm-title {
+    font-size: pr(32px);
+    line-height: pr(34px);
+    margin-bottom: pr(20px);
+    span {
+      color: #543b89;
+    }
+  }
+  // 首页模块
+  .home-lcm {
+    // display: none;
+    background-color: #f5f6f8;
+    padding: 0 pr(24px) pr(30px);
+    .lcm-cont {
+      background-color: #ffffff;
+      border-radius: pr(8px);
+      padding: pr(30px);
+      ul {
+        border-bottom: 1px dotted #c1c1c1;
+        padding-bottom: pr(20px);
+      }
+      li {
+        line-height: pr(42px);
+        color: #444444;
+        @extend %wap-point;
+        .key {
+          color: #999999;
+          .empty {
+            display: inline-block;
+            width: 2em;
+            height: 100%;
+          }
+        }
+      }
+      .cont-text {
+        line-height: pr(42px);
+        letter-spacing: 0px;
+        color: #444444;
+        padding: pr(20px) pr(16px) 0;
+        text-align: justify;
+        p {
+          @include ells(3);
+          &.show {
+            display: block;
+          }
+        }
+        .detail {
+          color: #ff724f;
+        }
+      }
+    }
+    .cont-btn {
+      padding-top: pr(20px);
+      @extend .space-between;
+      a {
+        width: 48%;
+        font-size: pr(28px);
+        height: pr(80px);
+        line-height: pr(80px);
+        box-shadow: pr(-3px) pr(2px) pr(13px) 0px rgba(255, 114, 79, 0.44);
+        border-radius: pr(6px);
+        border: solid 1px #ff7653;
+        text-align: center;
+        color: #ff724f;
+        &.active {
+          background-image: linear-gradient(-30deg, #ff724f 0%, #fe8d72 100%);
+          color: #fff;
+        }
+      }
+    }
+    .cont-course {
+      @extend .space-between;
+      border-bottom: 1px dotted #c1c1c1;
+      padding-bottom: pr(20px);
+      .course-l {
+        width: 46%;
+      }
+      .course-r {
+        width: 48%;
+        ul {
+          border-bottom: none;
+          li {
+            .star {
+              height: pr(21px);
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 学校优势
+  .good {
+    background-color: #f5f6f8;
+    padding: 0 pr(24px) pr(30px);
+    .good-cont {
+      ul {
+        white-space: nowrap;
+        overflow-x: scroll;
+        li {
+          display: inline-block;
+          width: pr(381px);
+          background-color: #ffffff;
+          border-radius: pr(8px);
+          margin-right: pr(20px);
+          p {
+            white-space: initial;
+          }
+          &.active {
+            background-color: #ff8838;
+            box-shadow: pr(-1px) pr(8px) pr(7px) 0px rgba(255, 136, 56, 0.3);
+            color: #fff;
+            .item-title {
+              &::after {
+                background-color: #fff;
+              }
+            }
+          }
+        }
+        .cont-item {
+          padding: pr(30px) pr(20px);
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: pr(60px);
+            height: pr(51px);
+            margin-bottom: pr(15px);
+          }
+          .item-title {
+            font-size: pr(30px);
+            padding-bottom: pr(16px);
+            margin-bottom: pr(20px);
+            position: relative;
+            &::after {
+              display: inline-block;
+              content: "";
+              width: pr(50px);
+              height: 1px;
+              background-color: #ff8838;
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 师资团队
+  .teacher {
+    background-color: #f5f6f8;
+    padding: 0 pr(24px) pr(30px);
+    .tea-cont {
+      background-color: #ffffff;
+      border-radius: pr(8px);
+      padding: pr(24px) pr(20px);
+    }
+    .item-l {
+      width: 40%;
+    }
+    .item-r {
+      width: 56%;
+      .r-title {
+        font-size: pr(30px);
+        margin-bottom: pr(10px);
+      }
+      p {
+        font-size: pr(24px);
+        color: #666666;
+        @include ells(4);
+      }
+    }
+    .tab-detail {
+      margin-bottom: pr(20px);
+      li {
+        @extend .space-between;
+      }
+    }
+    .tab-head {
+      ul {
+        @extend .space-between;
+      }
+      li {
+        width: 18.6%;
+        &.cur {
+          border: solid 1px #ff8838;
+        }
+      }
+      .more {
+        width: 18.6%;
+        background-color: #ededed;
+      }
+    }
+  }
+
+  // 学校环境
+  .scene {
+    background-color: #f5f6f8;
+    padding: 0 pr(24px) pr(30px);
+    position: relative;
+    .scene-cont {
+      padding: pr(26px);
+      background-color: #ffffff;
+      border-radius: pr(8px);
+    }
+    .swiper1 {
+      padding-bottom: pr(38px);
+      .swiper-pagination-bullets {
+        bottom: 0;
+      }
+      .swiper-pagination-bullet-active {
+        width: pr(24px);
+        border-radius: pr(12px);
+        background-color: #543b89;
+      }
+    }
+    .swiper1-arrows {
+      width: pr(41px);
+      height: pr(66px);
+      line-height: pr(66px);
+      border-radius: pr(3px);
+      opacity: 0.83;
+      color: #fff;
+      text-align: center;
+      background-color: #ff8838;
+      font-size: pr(36px);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .swiper-button-disabled {
+      background-color: #363636;
+    }
+    .prev {
+      left: 0;
+    }
+    .next {
+      right: 0;
+    }
+  }
+
+  // 最新资讯
+  .infos {
+    background-color: #f5f6f8;
+    padding: 0 pr(24px) pr(30px);
+    .infos-cont {
+      height: pr(359px);
+      background-color: #ffffff;
+      border-radius: pr(8px);
+      padding: pr(14px) pr(20px);
+      li{
+        line-height: pr(62px);
+        border-bottom: 1px dotted #cdcdcd;
+        @extend %wap-point;
+        .txt, .time{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .txt{
+          width: 82%;
+          @extend %wap-one;
+        }
+        .time{
+          width: 12%;
+          color: #777777;
+        }
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  // 最新资讯
+  .query {
+    background-color: #f5f6f8;
+    padding: 0 pr(24px) pr(30px);
+    .query-cont {
+      height: pr(359px);
+      background-color: #ffffff;
+      border-radius: pr(8px);
+      padding: pr(14px) pr(20px);
+      li{
+        line-height: pr(62px);
+        border-bottom: 1px dotted #cdcdcd;
+        padding-left: pr(52px);
+        background: url(../images/icon_2.png) no-repeat left;
+        background-size: pr(26px) pr(28px);
+        .txt, .time{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .txt{
+          width: 82%;
+          @extend %wap-one;
+        }
+        .time{
+          width: 12%;
+          color: #777777;
+        }
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .page-body {
+    display: none;
   }
 
   /*面包屑*/
@@ -1590,6 +2224,18 @@ ul {
   }
 
   .main {
+    display: none;
+  }
+
+  .friend {
+    display: none;
+  }
+
+  .footsusp {
+    display: none;
+  }
+
+  #footer {
     display: none;
   }
 
