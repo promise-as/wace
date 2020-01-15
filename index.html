@@ -31,6 +31,10 @@
     </div>
   </div>
 
+  <!-- 移动端 开始 -->
+  <div class="school-title wap-show">广州耀华国际教育学校</div>
+  <!-- 移动端 结束 -->
+
   <!-- 页面导航 -->
   <div class="nav">
     <div class="wrap">
@@ -181,7 +185,7 @@
     </div>
   </div>
 
-  <div class="teacher wap-show">
+  <div class="teacher-lcm wap-show">
     <div class="lcm-title">师资团队</div>
     <div class="tea-cont">
       <div class="tab-detail">
@@ -222,7 +226,7 @@
         </div>
 
         <!-- Add Pagination -->
-        <div class="swiper-pagination pag1"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
     <!-- 轮播图左右箭头 -->
@@ -257,7 +261,7 @@
       </ul>
     </div>
   </div>
-  
+
   <div class="query wap-show">
     <div class="lcm-title">常见答疑</div>
     <div class="query-cont">
@@ -669,37 +673,37 @@
   </div>
 
   <!-- 移动端 开始 -->
-	<div class="wap-susp wap-show">
-		<div class="susp-cont">
-			<ul>
-				<li>
-					<a href="">
-						<i class="icon"></i>
-						<span>首页</span>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<i class="icon"></i>
-						<span>校园开放日</span>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<i class="icon"></i>
-						<span>预约探校</span>
-					</a>
-				</li>
-				<li class="cur">
-					<a href="">
-						<i class="icon"></i>
-						<span>免费通话</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<!-- 移动端 结束 -->
+  <div class="wap-susp wap-show">
+    <div class="susp-cont">
+      <ul>
+        <li>
+          <a href="">
+            <i class="icon"></i>
+            <span>首页</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="icon"></i>
+            <span>校园开放日</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="icon"></i>
+            <span>预约探校</span>
+          </a>
+        </li>
+        <li class="cur">
+          <a href="">
+            <i class="icon"></i>
+            <span>免费通话</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 移动端 结束 -->
 
   <!-- thea右侧自定义漂浮 -->
   <div id="msRfloat">
@@ -709,6 +713,15 @@
 
   <script src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
   <script src="js/index.js"></script>
+  <script>
+    new Swiper('.swiper1', {
+      pagination: '.swiper-pagination', // 如果需要分页器
+      paginationClickable: true, // 点击分页器切换
+      prevButton: '.prev',
+      nextButton: '.next',
+      speed: 1000,
+    });
+  </script>
 
 </body>
 

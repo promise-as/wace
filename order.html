@@ -1,16 +1,16 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>预约看校</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="renderer" content="webkit" />
-  <link rel="stylesheet" type="text/css" href="http://img.thea.cn/public/css/base.css">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://img.thea.cn/public/css/base.css">
+  <script src="https://img.thea.cn/public/js/thea.debug.js"></script>
   <link rel="stylesheet" href="css/index.css">
 
-  <script type="text/javascript" src="http://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
+  <script src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
+  <title>预约看校</title>
 </head>
 
 <body>
@@ -26,7 +26,11 @@
 			</div>
 			<a class="tel-num" href="400-0118-798">400-0118-798</a>
 		</div>
-	</div>
+  </div>
+  
+  <!-- 移动端 开始 -->
+  <div class="school-title wap-show">广州耀华国际教育学校</div>
+  <!-- 移动端 结束 -->
 
   <!-- 页面导航 -->
   <div class="nav">
@@ -48,6 +52,33 @@
   <div class="banner">
     <img src="images/banner.png">
   </div>
+
+  <!-- 移动端 开始 -->
+	<div class="appoint-banner wap-show">
+		<img src="images/bg_6.png" alt="">
+  </div>
+  
+  <div class="appoint-form wap-show">
+    <div class="form-cont">
+      <form class="sign-in">
+        <input type="text" placeholder="姓名">
+        <div class="radio">
+          <span class="sel">男</span>
+          <span>女</span>
+        </div>
+        <select class="full-line">
+          <option value="" selected="" style="display: none;">在读年级</option>
+          <option value="小学">小学</option>
+          <option value="初中">初中</option>
+          <option value="高中">高中</option>
+          <option value="幼儿园">幼儿园</option>
+        </select>
+        <input type="text" placeholder="联系方式" class="full-line">
+        <input type="submit" value="立即预约" class="full-line">
+      </form>
+    </div>
+  </div>
+	<!-- 移动端 结束 -->
 
   <div class="page-path wrap">
     <p>当前位置：
@@ -261,15 +292,48 @@
     </div>
   </div>
 
+  <!-- 移动端 开始 -->
+  <div class="wap-susp wap-show">
+    <div class="susp-cont">
+      <ul>
+        <li>
+          <a href="">
+            <i class="icon"></i>
+            <span>首页</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="icon"></i>
+            <span>校园开放日</span>
+          </a>
+        </li>
+        <li class="cur">
+          <a href="">
+            <i class="icon"></i>
+            <span>预约探校</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="icon"></i>
+            <span>免费通话</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 移动端 结束 -->
+
   <!-- thea右侧自定义漂浮 -->
   <div id="msRfloat">
 		<a href="javascript:void(0)"></a>
 		<span id="toTop"></span>
 	</div>
 
-  <script src="js/index.js"></script>
-  <script src="https://img.thea.cn/public/js/thea.ms.form.js"></script> <!-- 表单插件 -->
   
+  <script src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

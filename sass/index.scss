@@ -1648,9 +1648,30 @@ ul {
           display: block;
         }
       }
+      ul {
+        padding-bottom: pr(20px);
+        margin-bottom: pr(20px);
+        border-bottom: 1px dotted #c1c1c1;
+        &:last-child {
+          margin-bottom: 0;
+          border-bottom: none;
+        }
+      }
+      .ul-title {
+        font-size: pr(30px);
+        height: pr(30px);
+        line-height: pr(30px);
+        color: #543b89;
+        margin-bottom: pr(10px);
+        img {
+          height: 100%;
+          margin-right: pr(8px);
+        }
+      }
       li {
         line-height: pr(42px);
         color: #444444;
+        @extend %wap-point;
         .key {
           color: #999999;
         }
@@ -1837,6 +1858,17 @@ ul {
     }
   }
 
+  // 加载更多
+  .load-more {
+    height: pr(80px);
+    line-height: pr(80px);
+    background-color: #e5e5e5;
+    border-radius: pr(8px);
+    font-size: pr(28px);
+    color: #444444;
+    text-align: center;
+  }
+
   // 常见问题 列表
   .issue-list {
     background-color: #f5f6f8;
@@ -1889,15 +1921,6 @@ ul {
           background-size: 100% 100%;
         }
       }
-    }
-    .more {
-      height: pr(80px);
-      line-height: pr(80px);
-      background-color: #e5e5e5;
-      border-radius: pr(8px);
-      font-size: pr(28px);
-      color: #444444;
-      text-align: center;
     }
   }
 
@@ -2055,8 +2078,7 @@ ul {
     }
   }
 
-  // 师资团队
-  .teacher {
+  .teacher-lcm {
     background-color: #f5f6f8;
     padding: 0 pr(24px) pr(30px);
     .tea-cont {
@@ -2158,29 +2180,31 @@ ul {
       background-color: #ffffff;
       border-radius: pr(8px);
       padding: pr(14px) pr(20px);
-      li{
+      li {
         line-height: pr(62px);
         border-bottom: 1px dotted #cdcdcd;
         @extend %wap-point;
-        .txt, .time{
+        .txt,
+        .time {
           display: inline-block;
           vertical-align: middle;
         }
-        .txt{
+        .txt {
           width: 82%;
           @extend %wap-one;
         }
-        .time{
+        .time {
           width: 12%;
           color: #777777;
         }
-        &:last-child{
+        &:last-child {
           border-bottom: none;
         }
       }
     }
   }
-  // 最新资讯
+
+  // 常见疑答
   .query {
     background-color: #f5f6f8;
     padding: 0 pr(24px) pr(30px);
@@ -2189,28 +2213,413 @@ ul {
       background-color: #ffffff;
       border-radius: pr(8px);
       padding: pr(14px) pr(20px);
-      li{
+      li {
         line-height: pr(62px);
         border-bottom: 1px dotted #cdcdcd;
         padding-left: pr(52px);
         background: url(../images/icon_2.png) no-repeat left;
         background-size: pr(26px) pr(28px);
-        .txt, .time{
+        .txt,
+        .time {
           display: inline-block;
           vertical-align: middle;
         }
-        .txt{
+        .txt {
           width: 82%;
           @extend %wap-one;
         }
-        .time{
+        .time {
           width: 12%;
           color: #777777;
         }
-        &:last-child{
+        &:last-child {
           border-bottom: none;
         }
       }
+    }
+  }
+
+  // 新闻资讯
+  .news-list {
+    background-color: #f5f6f8;
+    padding: pr(24px);
+    li {
+      .item {
+        padding: pr(36px) pr(30px);
+        background-color: #ffffff;
+        border-radius: pr(8px);
+        margin-bottom: pr(24px);
+        @extend .space-between;
+      }
+      .item-l {
+        padding: pr(10px);
+        border: solid pr(2px) #9a9a9a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .l-day {
+          width: 100%;
+          border-bottom: 1px solid #d7d7d7;
+          font-size: pr(36px);
+          text-align: center;
+        }
+        .l-date {
+          font-size: pr(22px);
+          color: #444444;
+        }
+      }
+      .item-r {
+        width: 78%;
+        .r-title {
+          @extend %wap-one;
+          font-size: pr(28px);
+          margin-bottom: pr(10px);
+        }
+        p {
+          @include ells(2);
+          font-size: pr(24px);
+          color: #666666;
+        }
+      }
+      &:hover {
+        .item {
+          background-color: #543b89;
+          color: #fff;
+          .item-l {
+            border: solid pr(2px) #fff;
+            .l-date {
+              color: #fff;
+            }
+          }
+          .item-r {
+            p {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 预约报名
+  .appoint-form {
+    // display: none;
+    padding: 0 pr(24px) pr(30px);
+    background-color: #f5f6f8;
+    .form-cont {
+      padding: pr(30px) 0;
+      background: #fff;
+      border-radius: pr(8px);
+      position: relative;
+      top: pr(-80px);
+    }
+    .sign-in {
+      padding: 0 pr(28px);
+      display: flex;
+      flex-wrap: wrap;
+    }
+    input,
+    select {
+      height: pr(80px);
+      line-height: pr(80px);
+      font-size: pr(28px);
+      border-radius: pr(10px);
+      border: none;
+      margin-bottom: pr(16px);
+      background-color: #f5f6f8;
+    }
+    select {
+      padding: 0 1em;
+      background: url(../images/sel.png) no-repeat #f5f6f8 94% center;
+      background-size: pr(17px) pr(11px);
+    }
+    input {
+      width: 60%;
+      margin-right: 4%;
+      text-indent: 1em;
+    }
+    .full-line {
+      width: 100%;
+      margin-right: 0;
+    }
+    input[type="submit"] {
+      text-indent: 0;
+      background-color: #ff724f;
+      color: #fff;
+    }
+    .radio {
+      font-size: pr(28px);
+      line-height: pr(80px);
+      span {
+        padding-left: pr(48px);
+        background: url(../images/radio_nor.png) no-repeat left center;
+        background-size: pr(32px) pr(32px);
+        margin-right: pr(30px);
+        &.sel {
+          background: url(../images/radio_sel.png) no-repeat left center;
+          background-size: pr(32px) pr(32px);
+        }
+      }
+    }
+  }
+
+  // 招生简章
+  .admissions {
+    padding: pr(24px);
+    background-color: #f5f6f8;
+    .admissions-cont {
+      width: 100%;
+      padding: 0 pr(30px);
+      background-color: #ffffff;
+      border-radius: pr(8px);
+    }
+    .cont-title {
+      font-size: pr(30px);
+      line-height: pr(40px);
+      text-align: center;
+      padding: pr(26px) 0;
+      border-bottom: 1px dotted #cdcdcd;
+    }
+    .cont-txt {
+      padding: pr(20px) 0;
+      .txt-title {
+        color: #543b89;
+        font-weight: bold;
+        padding: pr(20px) 0;
+      }
+    }
+  }
+
+  // 校园风采
+  .campus {
+    padding: pr(24px);
+    background-color: #f5f6f8;
+    li {
+      margin-bottom: pr(24px);
+    }
+  }
+
+  // 课程设置
+  .lessons {
+    padding: pr(24px);
+    background-color: #f5f6f8;
+    .lessons-cont {
+      padding: pr(20px) pr(30px);
+      background-color: #ffffff;
+      border-radius: pr(8px);
+      .cont-title {
+        font-size: pr(30px);
+        text-align: center;
+        border-bottom: 1px dotted #cdcdcd;
+        padding-bottom: pr(20px);
+        margin-bottom: pr(20px);
+        .sub {
+          font-size: pr(24px);
+          color: #666666;
+        }
+        span {
+          vertical-align: middle;
+        }
+        img {
+          height: pr(21px);
+          vertical-align: middle;
+        }
+      }
+      li {
+        line-height: pr(42px);
+        color: #444444;
+        @extend %wap-point;
+        .key {
+          color: #999999;
+          .empty {
+            display: inline-block;
+            width: 2em;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .lessons-intro {
+    padding: 0 pr(24px) pr(30px);
+    background-color: #f5f6f8;
+    .lcm-title {
+      padding-left: pr(26px);
+    }
+    .intro-cont {
+      background-color: #ffffff;
+      border-radius: pr(8px);
+      padding: pr(30px) pr(40px);
+      p {
+        margin-bottom: pr(10px);
+      }
+    }
+  }
+
+  // 师资团队
+  .teacher-list {
+    padding: pr(24px);
+    background-color: #f5f6f8;
+    li {
+      margin-bottom: pr(24px);
+      background-color: #ffffff;
+      border-radius: pr(8px);
+      padding: pr(30px) pr(30px) pr(20px) 0;
+      @extend .space-between;
+      .item-l {
+        width: 74%;
+        .l-name {
+          font-size: pr(32px);
+          font-weight: bold;
+          margin-bottom: pr(10px);
+          &::before {
+            display: inline-block;
+            content: "";
+            width: pr(5px);
+            height: pr(34px);
+            background-color: #543b89;
+            vertical-align: middle;
+            margin-right: pr(30px);
+          }
+          span {
+            vertical-align: middle;
+          }
+        }
+        .l-text {
+          @include ells(4);
+          margin: 0 0 pr(10px) pr(30px);
+          &.show {
+            display: block;
+          }
+        }
+        .fold {
+          font-size: pr(22px);
+          line-height: pr(40px);
+          color: #444444;
+          text-align: center;
+          cursor: pointer;
+          margin-left: pr(30px);
+          span {
+            vertical-align: middle;
+          }
+          .icon {
+            display: inline-block;
+            width: pr(18px);
+            height: pr(12px);
+            background: url(../images/down.png) no-repeat;
+            background-size: 100% 100%;
+            margin-left: pr(6px);
+            vertical-align: middle;
+          }
+        }
+        .down {
+          color: #4b4b4b;
+          .icon {
+            background: url(../images/up.png) no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+      .item-r {
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+        img {
+          border-radius: pr(5px);
+          margin-bottom: pr(18px);
+        }
+        .r-btn {
+          font-size: pr(24px);
+          line-height: pr(51px);
+          color: #ffffff;
+          background-image: linear-gradient(-56deg, #ff724f 0%, #ff8d71 100%);
+          box-shadow: pr(-3px) pr(2px) pr(13px) 0px rgba(255, 114, 79, 0.44);
+          border-radius: pr(3px);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // 新闻终端
+  .news-ftu {
+    padding: pr(24px) pr(24px) 0;
+    background-color: #f5f6f8;
+    .ftu-cont {
+      background-color: #ffffff;
+      border-radius: pr(8px);
+      padding: pr(20px);
+      img {
+        padding: pr(20px) 0;
+      }
+    }
+    .cont-title {
+      font-size: pr(32px);
+      line-height: pr(40px);
+    }
+
+    .publish {
+      font-size: pr(22px);
+      line-height: pr(40px);
+      color: #888888;
+      border-bottom: 1px dotted #cdcdcd;
+      padding-bottom: pr(20px);
+      img {
+        height: pr(19px);
+        vertical-align: middle;
+        margin-right: pr(8px);
+        padding: 0;
+      }
+      span {
+        vertical-align: middle;
+        margin-right: pr(20px);
+      }
+    }
+    .sign-up {
+      display: block;
+    }
+    .subtitle {
+      font-weight: bold;
+      color: #3084f7;
+      margin-bottom: pr(10px);
+    }
+    .cont-page {
+      border-top: 1px dotted #cdcdcd;
+      margin-top: pr(20px);
+      padding-top: pr(20px);
+      a {
+        display: block;
+        color: #666666;
+      }
+      span {
+        color: #333333;
+      }
+    }
+    .visit-school {
+      img {
+        border-radius: pr(8px);
+      }
+    }
+    .apply {
+      padding: 0;
+      .apply-cont {
+        &.pure {
+          background: #fff;
+        }
+      }
+      input,
+      select {
+        background-color: #f5f6f8;
+      }
+      input[type="submit"] {
+        background-color: #ff724f;
+      }
+    }
+    .infos{
+      padding: pr(20px) 0 pr(30px);
+    }
+    .query{
+      padding: 0 0 pr(30px);
     }
   }
 
