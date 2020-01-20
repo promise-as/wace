@@ -570,5 +570,6 @@ ul.clearfix li { float: left; }
   #footer { display: none; }
   /*thea左侧自定义漂浮*/
   #msRfloat { display: none; } }
+#isMobile { display: none; }
 
 /*# sourceMappingURL=index.css.map */
