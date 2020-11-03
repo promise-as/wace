@@ -1,575 +1,2585 @@
 @charset "UTF-8";
-body, div, p, h1, h2, h3, ul, li, a, em, input, select { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0px; margin: 0px; }
+body,
+div,
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+a,
+em,
+input,
+select {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
 
-p { line-height: 1.6; }
+p {
+  line-height: 1.6;
+}
 
-.nav ul, .page-body .school-index-intro .wrap, .main .wrap, .friend .lian, .news-ter .ter-page { zoom: 1; }
-.nav ul:after, .page-body .school-index-intro .wrap:after, .main .wrap:after, .friend .lian:after, .news-ter .ter-page:after { clear: both; }
-.nav ul:before, .page-body .school-index-intro .wrap:before, .main .wrap:before, .friend .lian:before, .news-ter .ter-page:before, .nav ul:after, .page-body .school-index-intro .wrap:after, .main .wrap:after, .friend .lian:after, .news-ter .ter-page:after { content: ""; display: table; }
+.nav ul, .page-body .school-index-intro .wrap, .main .wrap, .friend .lian, .news-ter .ter-page {
+  zoom: 1;
+}
+.nav ul:after, .page-body .school-index-intro .wrap:after, .main .wrap:after, .friend .lian:after, .news-ter .ter-page:after {
+  clear: both;
+}
+.nav ul:before, .page-body .school-index-intro .wrap:before, .main .wrap:before, .friend .lian:before, .news-ter .ter-page:before, .nav ul:after, .page-body .school-index-intro .wrap:after, .main .wrap:after, .friend .lian:after, .news-ter .ter-page:after {
+  content: "";
+  display: table;
+}
 
-.aside .process ul.dynamic li::before { content: ""; display: inline-block; width: 6px; height: 6px; background-color: #ff8838; vertical-align: middle; margin-right: 10px; border-radius: 50%; }
+.page-body .trends-news .news-container .news-content p, .page-body .trends-news .que-container li a, .aside .process ul.dynamic li a {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
-.page-body .trends-news .news-container .news-content p, .page-body .trends-news .que-container li a, .aside .process ul.dynamic li a { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+input {
+  text-indent: 1em;
+}
+input::-webkit-input-placeholder {
+  /*WebKit browsers*/
+  color: #999;
+}
+input::-moz-input-placeholder {
+  /*Mozilla Firefox*/
+  color: #999;
+}
+input::-ms-input-placeholder {
+  /*Internet Explorer*/
+  color: #999;
+}
+input[type="submit"] {
+  text-indent: 0;
+  cursor: pointer;
+}
 
-input { text-indent: 1em; }
-input::-webkit-input-placeholder { /*WebKit browsers*/ color: #999; }
-input::-moz-input-placeholder { /*Mozilla Firefox*/ color: #999; }
-input::-ms-input-placeholder { /*Internet Explorer*/ color: #999; }
-input[type="submit"] { text-indent: 0; cursor: pointer; }
+select {
+  appearance: none;
+}
 
-select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+body {
+  font-size: 14px;
+  padding-bottom: 126px;
+}
 
-body { font-size: 14px; padding-bottom: 126px; }
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
 
-.wrap { width: 1200px; margin: 0 auto; }
+.lf {
+  float: left;
+}
 
-.lf { float: left; }
+.rt {
+  float: right;
+}
 
-.rt { float: right; }
-
-ul.clearfix li { float: left; }
+ul.clearfix li {
+  float: left;
+}
 
 /*页面头部*/
-.header { height: 80px; }
-.header a { line-height: 80px; display: inline-block; vertical-align: middle; }
-.header a span { font-size: 18px; position: relative; top: 6px; }
-.header .lf img { padding-top: 10px; }
-.header .subtitle { display: inline-block; margin-top: 32px; margin-left: 18px; padding-left: 16px; border-left: 1px solid #9c9c9c; font-size: 18px; color: #555; }
-.header .rt .enroll-content { display: inline-block; vertical-align: middle; padding-right: 15px; margin-right: 12px; border-right: 1px solid #e9e9e9; }
-.header .rt .enroll-content .enroll { font-size: 16px; font-weight: 700; color: #ff8838; }
-.header .rt .enroll-content .enroll span { padding-left: 24px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/tel.png) no-repeat; }
-.header .rt .enroll-content .hotline { color: #999; }
-.header .rt .tel-num { font-size: 26px; color: #ff8838; }
+.header {
+  height: 80px;
+}
+.header a {
+  line-height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.header a span {
+  font-size: 18px;
+  position: relative;
+  top: 6px;
+}
+.header .lf img {
+  padding-top: 10px;
+}
+.header .subtitle {
+  display: inline-block;
+  margin-top: 32px;
+  margin-left: 18px;
+  padding-left: 16px;
+  border-left: 1px solid #9c9c9c;
+  font-size: 18px;
+  color: #555;
+}
+.header .rt .enroll-content {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 15px;
+  margin-right: 12px;
+  border-right: 1px solid #e9e9e9;
+}
+.header .rt .enroll-content .enroll {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff8838;
+}
+.header .rt .enroll-content .enroll span {
+  padding-left: 24px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/tel.png) no-repeat;
+}
+.header .rt .enroll-content .hotline {
+  color: #999;
+}
+.header .rt .tel-num {
+  font-size: 26px;
+  color: #ff8838;
+}
 
-.banner a { display: block; width: 100%; height: 100%; }
+.banner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
-.nav { border-top: 1px solid #eee; }
-.nav ul li { float: left; padding: 16px 0px; }
-.nav ul li a { display: block; padding: 0 34px; border-right: 1px solid #dadada; font-size: 16px; }
-.nav ul li:hover, .nav ul li.active { background-color: #543b89; }
-.nav ul li:hover a, .nav ul li.active a { color: #fff; border-color: #543b89; }
-.nav ul li:last-child a { border-right: none; }
+.nav {
+  border-top: 1px solid #eee;
+}
+.nav ul li {
+  float: left;
+  padding: 16px 0px;
+}
+.nav ul li a {
+  display: block;
+  padding: 0 34px;
+  border-right: 1px solid #dadada;
+  font-size: 16px;
+}
+.nav ul li:hover, .nav ul li.active {
+  background-color: #543b89;
+}
+.nav ul li:hover a, .nav ul li.active a {
+  color: #fff;
+  border-color: #543b89;
+}
+.nav ul li:last-child a {
+  border-right: none;
+}
 
 /*页面主体*/
-.page-body .school-index-intro { padding: 50px 0; background-color: #f1f1f1; }
-.page-body .school-index-intro .bd { line-height: 36px; color: #666; font-size: 14px; }
-.page-body .school-index-intro .bd em, .page-body .school-index-intro .bd a { color: #ff7f29; }
-.page-body .school-index-intro .bd .txt { text-indent: 30px; text-align: justify; font-size: 14px; }
-.page-body .school-index-intro .wrap > .lf { width: 600px; margin-right: 50px; }
-.page-body .school-index-intro .wrap > .rt { width: 550px; }
-.page-body .school-index-intro .sign-in { padding-top: 20px; }
-.page-body .school-index-intro .img-container { margin-right: -30px; margin-bottom: 60px; }
-.page-body .school-index-intro .img-container li { margin-right: 30px; width: 380px; padding: 8px 8px 0 8px; background-color: #fff; }
-.page-body .school-index-intro .img-container li .li-title { font-size: 20px; margin-top: 20px; text-align: center; }
-.page-body .school-index-intro .img-container li .txt { padding: 0 20px; margin-bottom: 20px; font-size: 16px; text-align: justify; color: #999; height: 84px; line-height: 30px; overflow: hidden; }
-.page-body .school-index-intro .teacheraInfo { padding: 36px 50px 18px 40px; background-color: #fff; }
-.page-body .school-index-intro .teacheraInfo .author-item { display: none; }
-.page-body .school-index-intro .teacheraInfo .author-item .item-title { font-size: 22px; color: #ff8838; }
-.page-body .school-index-intro .teacheraInfo .content { line-height: 32px; height: 68px; width: 1100px; overflow: auto; color: #666; margin: 20px 0; font-size: 14px; }
-.page-body .school-index-intro .teacheraInfo .show { display: block; }
-.page-body .school-index-intro .teacheraInfo .author { position: relative; }
-.page-body .school-index-intro .teacheraInfo .author ul { margin-right: -42px; }
-.page-body .school-index-intro .teacheraInfo .author ul li { position: relative; width: 100px; height: 100px; margin-right: 42px; margin-top: 20px; border-radius: 50%; border: 2px solid #fff; cursor: pointer; }
-.page-body .school-index-intro .teacheraInfo .author ul li.active { border: 2px solid #ffa200; }
-.page-body .school-index-intro .teacheraInfo .author ul li img { width: 100%; border-radius: 50%; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.page-body .school-index-intro .teacheraInfo .author ul li i { position: absolute; top: -14px; display: block; width: 100%; height: 14px; }
-.page-body .school-index-intro .teacheraInfo .author ul li i.active { background: url("https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/iconfont-jt.png") no-repeat 50% 0; }
-.page-body .school-index-intro .teacheraInfo .author .more { position: absolute; top: 50%; margin-top: -8px; left: 574px; }
-.page-body .hasline { border-bottom: 1px solid #f0efef; }
-.page-body .school-index-content { padding: 60px 0; }
-.page-body .school-index-content .lf { width: 400px; }
-.page-body .school-index-content .lf img { width: 400px !important; height: auto !important; }
-.page-body .school-index-content .rt { margin-left: 40px; width: 750px; }
-.page-body .school-index-content .rt .title { font-size: 22px; color: #666; padding-bottom: 24px; }
-.page-body .school-index-content .rt .title .a-default { margin-left: 30px; padding-left: 18px; font-size: 14px; color: #999; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/write.png) no-repeat 0% 40%; }
-.page-body .school-index-content .rt .cousre-setting { padding-bottom: 18px; text-indent: -12px; }
-.page-body .school-index-content .rt .bd .txt { line-height: 32px; text-indent: 30px; text-align: justify; color: #666; margin-bottom: 14px; font-size: 14px; }
-.page-body .school-index-content .rt .consult { width: 100%; line-height: 34px; background-color: #f6f6f6; }
-.page-body .school-index-content .rt .consult .a-default { margin-left: 18px; padding-left: 18px; padding-right: 15px; font-size: 14px; color: #999; }
-.page-body .school-index-content .rt .consult .test { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/write.png) no-repeat 0% 40%; }
-.page-body .school-index-content .rt .consult .zx { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/message.png) no-repeat 0% 40%; }
-.page-body .index-stutdent-info { padding: 16px 0 16px 0; line-height: 36px; font-size: 14px; }
-.page-body .index-stutdent-info .lf { margin-right: 26px; }
-.page-body .index-stutdent-info .lf p { width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #666; }
-.page-body .index-stutdent-info .lf p .direction { display: inline-block; width: 70px; padding-left: 4px; height: 20px; line-height: 20px; margin-right: 10px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/bg-direction.png) no-repeat; color: #ff8838; }
-.page-body .index-stutdent-info .lf span { color: #999; }
-.page-body .index-stutdent-info .rt { margin-left: 0; width: 300px; }
-.page-body .index-stutdent-info .rt p { color: #666; }
-.page-body .index-stutdent-info .rt span { color: #999; }
-.page-body .tel-div { line-height: 40px; font-size: 14px; }
-.page-body .tel-div .commonBtn { margin-right: 18px; margin-top: 0px; }
-.page-body .tel-div .tel { display: inline-block; margin-left: 10px; padding-left: 24px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/tel.png) no-repeat 0% 50%; font-size: 16px; color: #666; }
-.page-body .tel-div .tel .tel-num { font-size: 20px; color: #ff8838; vertical-align: bottom; }
-.page-body .trends-news { margin: 60px 0 0; }
-.page-body .trends-news .hd { padding-bottom: 12px; border-bottom: dotted 1px #d2d2d2; }
-.page-body .trends-news .news { width: 700px; }
-.page-body .trends-news .more { float: right; padding-top: 16px; }
-.page-body .trends-news .rt { width: 450px; }
-.page-body .trends-news .news-container { padding: 10px 0px 0px 10px; border-bottom: 1px dotted #d2d2d2; }
-.page-body .trends-news .news-container li { margin-bottom: 12px; }
-.page-body .trends-news .news-container .news-date { padding: 12px 8px; *padding: 2px 2px; width: 72px; height: 70px; text-align: center; background-color: #533797; }
-.page-body .trends-news .news-container .news-date .time { display: block; font-size: 20px; color: #fff; padding-bottom: 2px; border-bottom: 1px solid #6b53a6; }
-.page-body .trends-news .news-container .news-date .date { display: block; color: #cab6fd; margin-top: 4px; }
-.page-body .trends-news .news-container .news-content { padding: 0px 30px 0px 20px; margin: 12px 0; border-right: 1px solid #d7d7d7; }
-.page-body .trends-news .news-container .news-content p { font-size: 16px; margin-bottom: 5px; }
-.page-body .trends-news .news-container .news-content span { display: inline-block; font-size: 12px; color: #999; width: 510px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.page-body .trends-news .news-container .news-details { width: 56px; *width: 28px; *padding-left: 10px; text-align: center; line-height: 72px; }
-.page-body .trends-news .news-container .news-details a { display: inline-block; width: 100%; height: 100%; }
-.page-body .trends-news .que-container { font-size: 14px; }
-.page-body .trends-news .que-container li { width: 100%; padding-left: 34px; height: 44px; line-height: 44px; border-bottom: dotted 1px #d2d2d2; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/inquiry.png) no-repeat 0% 50%; }
-.page-body .trends-news .que-container li a { display: inline-block; }
+.page-body .school-index-intro {
+  padding: 50px 0;
+  background-color: #f1f1f1;
+}
+.page-body .school-index-intro .bd {
+  line-height: 36px;
+  color: #666;
+  font-size: 14px;
+}
+.page-body .school-index-intro .bd em,
+.page-body .school-index-intro .bd a {
+  color: #ff7f29;
+}
+.page-body .school-index-intro .bd .txt {
+  text-indent: 30px;
+  text-align: justify;
+  font-size: 14px;
+}
+.page-body .school-index-intro .wrap > .lf {
+  width: 600px;
+  margin-right: 50px;
+}
+.page-body .school-index-intro .wrap > .rt {
+  width: 550px;
+}
+.page-body .school-index-intro .sign-in {
+  padding-top: 20px;
+}
+.page-body .school-index-intro .img-container {
+  margin-right: -30px;
+  margin-bottom: 60px;
+}
+.page-body .school-index-intro .img-container li {
+  margin-right: 30px;
+  width: 380px;
+  padding: 8px 8px 0 8px;
+  background-color: #fff;
+}
+.page-body .school-index-intro .img-container li .li-title {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.page-body .school-index-intro .img-container li .txt {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: justify;
+  color: #999;
+  height: 84px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.page-body .school-index-intro .teacheraInfo {
+  padding: 36px 50px 18px 40px;
+  background-color: #fff;
+}
+.page-body .school-index-intro .teacheraInfo .author-item {
+  display: none;
+}
+.page-body .school-index-intro .teacheraInfo .author-item .item-title {
+  font-size: 22px;
+  color: #ff8838;
+}
+.page-body .school-index-intro .teacheraInfo .content {
+  line-height: 32px;
+  height: 68px;
+  width: 1100px;
+  overflow: auto;
+  color: #666;
+  margin: 20px 0;
+  font-size: 14px;
+}
+.page-body .school-index-intro .teacheraInfo .show {
+  display: block;
+}
+.page-body .school-index-intro .teacheraInfo .author {
+  position: relative;
+}
+.page-body .school-index-intro .teacheraInfo .author ul {
+  margin-right: -42px;
+}
+.page-body .school-index-intro .teacheraInfo .author ul li {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-right: 42px;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.page-body .school-index-intro .teacheraInfo .author ul li.active {
+  border: 2px solid #ffa200;
+}
+.page-body .school-index-intro .teacheraInfo .author ul li img {
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.page-body .school-index-intro .teacheraInfo .author ul li i {
+  position: absolute;
+  top: -14px;
+  display: block;
+  width: 100%;
+  height: 14px;
+}
+.page-body .school-index-intro .teacheraInfo .author ul li i.active {
+  background: url("https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/iconfont-jt.png") no-repeat 50% 0;
+}
+.page-body .school-index-intro .teacheraInfo .author .more {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 574px;
+}
+.page-body .hasline {
+  border-bottom: 1px solid #f0efef;
+}
+.page-body .school-index-content {
+  padding: 60px 0;
+}
+.page-body .school-index-content .lf {
+  width: 400px;
+}
+.page-body .school-index-content .lf img {
+  width: 400px !important;
+  height: auto !important;
+}
+.page-body .school-index-content .rt {
+  margin-left: 40px;
+  width: 750px;
+}
+.page-body .school-index-content .rt .title {
+  font-size: 22px;
+  color: #666;
+  padding-bottom: 24px;
+}
+.page-body .school-index-content .rt .title .a-default {
+  margin-left: 30px;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #999;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/write.png) no-repeat 0% 40%;
+}
+.page-body .school-index-content .rt .cousre-setting {
+  padding-bottom: 18px;
+  text-indent: -12px;
+}
+.page-body .school-index-content .rt .bd .txt {
+  line-height: 32px;
+  text-indent: 30px;
+  text-align: justify;
+  color: #666;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.page-body .school-index-content .rt .consult {
+  width: 100%;
+  line-height: 34px;
+  background-color: #f6f6f6;
+}
+.page-body .school-index-content .rt .consult .a-default {
+  margin-left: 18px;
+  padding-left: 18px;
+  padding-right: 15px;
+  font-size: 14px;
+  color: #999;
+}
+.page-body .school-index-content .rt .consult .test {
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/write.png) no-repeat 0% 40%;
+}
+.page-body .school-index-content .rt .consult .zx {
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/message.png) no-repeat 0% 40%;
+}
+.page-body .index-stutdent-info {
+  padding: 16px 0 16px 0;
+  line-height: 36px;
+  font-size: 14px;
+}
+.page-body .index-stutdent-info .lf {
+  margin-right: 26px;
+}
+.page-body .index-stutdent-info .lf p {
+  width: 420px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #666;
+}
+.page-body .index-stutdent-info .lf p .direction {
+  display: inline-block;
+  width: 70px;
+  padding-left: 4px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/bg-direction.png) no-repeat;
+  color: #ff8838;
+}
+.page-body .index-stutdent-info .lf span {
+  color: #999;
+}
+.page-body .index-stutdent-info .rt {
+  margin-left: 0;
+  width: 300px;
+}
+.page-body .index-stutdent-info .rt p {
+  color: #666;
+}
+.page-body .index-stutdent-info .rt span {
+  color: #999;
+}
+.page-body .tel-div {
+  line-height: 40px;
+  font-size: 14px;
+}
+.page-body .tel-div .commonBtn {
+  margin-right: 18px;
+  margin-top: 0px;
+}
+.page-body .tel-div .tel {
+  display: inline-block;
+  margin-left: 10px;
+  padding-left: 24px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/tel.png) no-repeat 0% 50%;
+  font-size: 16px;
+  color: #666;
+}
+.page-body .tel-div .tel .tel-num {
+  font-size: 20px;
+  color: #ff8838;
+  vertical-align: bottom;
+}
+.page-body .trends-news {
+  margin: 60px 0 0;
+}
+.page-body .trends-news .hd {
+  padding-bottom: 12px;
+  border-bottom: dotted 1px #d2d2d2;
+}
+.page-body .trends-news .news {
+  width: 700px;
+}
+.page-body .trends-news .more {
+  float: right;
+  padding-top: 16px;
+}
+.page-body .trends-news .rt {
+  width: 450px;
+}
+.page-body .trends-news .news-container {
+  padding: 10px 0px 0px 10px;
+  border-bottom: 1px dotted #d2d2d2;
+}
+.page-body .trends-news .news-container li {
+  margin-bottom: 12px;
+}
+.page-body .trends-news .news-container .news-date {
+  padding: 12px 8px;
+  *padding: 2px 2px;
+  width: 72px;
+  height: 70px;
+  text-align: center;
+  background-color: #533797;
+}
+.page-body .trends-news .news-container .news-date .time {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #6b53a6;
+}
+.page-body .trends-news .news-container .news-date .date {
+  display: block;
+  color: #cab6fd;
+  margin-top: 4px;
+}
+.page-body .trends-news .news-container .news-content {
+  padding: 0px 30px 0px 20px;
+  margin: 12px 0;
+  border-right: 1px solid #d7d7d7;
+}
+.page-body .trends-news .news-container .news-content p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.page-body .trends-news .news-container .news-content span {
+  display: inline-block;
+  font-size: 12px;
+  color: #999;
+  width: 510px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page-body .trends-news .news-container .news-details {
+  width: 56px;
+  *width: 28px;
+  *padding-left: 10px;
+  text-align: center;
+  line-height: 72px;
+}
+.page-body .trends-news .news-container .news-details a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.page-body .trends-news .que-container {
+  font-size: 14px;
+}
+.page-body .trends-news .que-container li {
+  width: 100%;
+  padding-left: 34px;
+  height: 44px;
+  line-height: 44px;
+  border-bottom: dotted 1px #d2d2d2;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/inquiry.png) no-repeat 0% 50%;
+}
+.page-body .trends-news .que-container li a {
+  display: inline-block;
+}
 
-.intro-title { font-size: 26px; color: #444; padding-bottom: 30px; }
-.intro-title em { color: #6745a6; }
-.intro-title small { padding-left: 10px; font-size: 24px; color: #d1d1d1; }
+.intro-title {
+  font-size: 26px;
+  color: #444;
+  padding-bottom: 30px;
+}
+.intro-title em {
+  color: #6745a6;
+}
+.intro-title small {
+  padding-left: 10px;
+  font-size: 24px;
+  color: #d1d1d1;
+}
 
-.blue-bar-x { display: block; width: 50px; height: 2px; background-color: #ff8838; margin: 0 auto; margin-bottom: 20px; margin-top: 10px; }
+.blue-bar-x {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #ff8838;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
 
-.collect ul { margin-right: -20px; }
-.collect ul input { margin: 0 20px 20px 0; }
-.collect input { width: 264px; height: 40px; line-height: 40px; background-color: #ffffff; border: none; font-size: 14px; }
-.collect input[type="submit"] { width: 100%; line-height: 40px; background-color: #ff8838; color: #fff; }
-.collect select { background: transparent; border: solid 1px #e5e5e5; padding: 0 1em; height: 44px; }
-.collect .sel-grade { width: 264px; margin-right: 20px; margin-bottom: 16px; border: none; background: url(https://img.thea.cn/public/platform/thea/201912/hbj/builder/images/icon_1.png) no-repeat 95% #fff; }
+.collect ul {
+  margin-right: -20px;
+}
+.collect ul input {
+  margin: 0 20px 20px 0;
+}
+.collect input {
+  width: 264px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 14px;
+}
+.collect input[type="submit"] {
+  width: 100%;
+  line-height: 40px;
+  background-color: #ff8838;
+  color: #fff;
+}
+.collect select {
+  background: transparent;
+  border: solid 1px #e5e5e5;
+  padding: 0 1em;
+  height: 44px;
+}
+.collect .sel-grade {
+  width: 264px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  border: none;
+  background: url(https://img.thea.cn/public/platform/thea/201912/hbj/builder/images/icon_1.png) no-repeat 95% #fff;
+}
 
-.commonBtn { display: inline-block; text-align: center; width: 140px; line-height: 40px; }
+.commonBtn {
+  display: inline-block;
+  text-align: center;
+  width: 140px;
+  line-height: 40px;
+}
 
-.btn-active { background-color: #ff8838; border: 1px solid #ff8838; color: #fff; }
+.btn-active {
+  background-color: #ff8838;
+  border: 1px solid #ff8838;
+  color: #fff;
+}
 
-.fast-sign { padding-top: 35px; }
-.fast-sign .collect { margin-left: 8px; width: 300px; padding: 20px; background-color: #533797; }
-.fast-sign .collect .fast-title { font-size: 24px; text-align: center; color: #fff; margin-bottom: 20px; }
-.fast-sign .collect input { margin: 0 auto; width: 100%; line-height: 40px; margin-bottom: 20px; }
-.fast-sign .collect input[type="submit"] { text-indent: 0; }
+.fast-sign {
+  padding-top: 35px;
+}
+.fast-sign .collect {
+  margin-left: 8px;
+  width: 300px;
+  padding: 20px;
+  background-color: #533797;
+}
+.fast-sign .collect .fast-title {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.fast-sign .collect input {
+  margin: 0 auto;
+  width: 100%;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.fast-sign .collect input[type="submit"] {
+  text-indent: 0;
+}
 
-.chart { position: relative; margin-left: 160px; }
-.chart .chart-cont { width: 180px; height: 145px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/chart.jpg) no-repeat 50% 0%; }
+.chart {
+  position: relative;
+  margin-left: 160px;
+}
+.chart .chart-cont {
+  width: 180px;
+  height: 145px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/chart.jpg) no-repeat 50% 0%;
+}
 
-.chart-txt { position: absolute; bottom: 2px; width: 180px; text-align: center; height: 20px; line-height: 20px; }
+.chart-txt {
+  position: absolute;
+  bottom: 2px;
+  width: 180px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+}
 
-.percent { position: relative; width: 180px; line-height: 145px; text-align: center; margin-left: 30px; }
-.percent .percent-lf { position: absolute; top: 30%; background-color: #55a1ff; margin-right: 10px; }
-.percent .percent-rt { position: absolute; top: 30%; right: 0; background-color: #4ed694; margin-left: 10px; }
-.percent div { width: 50px; height: 50px; line-height: 50px; border-radius: 18px; color: #fff; }
-.percent .dotted { font-size: 24px; }
+.percent {
+  position: relative;
+  width: 180px;
+  line-height: 145px;
+  text-align: center;
+  margin-left: 30px;
+}
+.percent .percent-lf {
+  position: absolute;
+  top: 30%;
+  background-color: #55a1ff;
+  margin-right: 10px;
+}
+.percent .percent-rt {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  background-color: #4ed694;
+  margin-left: 10px;
+}
+.percent div {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 18px;
+  color: #fff;
+}
+.percent .dotted {
+  font-size: 24px;
+}
 
 /*面包屑*/
-.page-path { font-size: 14px; color: #888; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.page-path p { line-height: 42px; padding-left: 28px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/index.jpg) no-repeat 0% 40%; }
-.page-path a:hover { color: #f05630; }
-.page-path .cur { color: #f05630; }
+.page-path {
+  font-size: 14px;
+  color: #888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page-path p {
+  line-height: 42px;
+  padding-left: 28px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/index.jpg) no-repeat 0% 40%;
+}
+.page-path a:hover {
+  color: #f05630;
+}
+.page-path .cur {
+  color: #f05630;
+}
 
-.degree { width: 65px; display: inline-block; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/degree.png) no-repeat 0px 0px; }
-.degree i.degree, .degree i.star { height: 12px; }
-.degree .star { width: 70%; display: block; overflow: hidden; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/degree.png) no-repeat 0px -15px; }
+.degree {
+  width: 65px;
+  display: inline-block;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/degree.png) no-repeat 0px 0px;
+}
+.degree i.degree,
+.degree i.star {
+  height: 12px;
+}
+.degree .star {
+  width: 70%;
+  display: block;
+  overflow: hidden;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/degree.png) no-repeat 0px -15px;
+}
 
-.main { padding: 20px 0; background-color: #f1f1f1; }
-.main .team-introduce { min-height: 1454px; padding-bottom: 30px; background-color: #fff; }
-.main .team-introduce .show { display: none; }
+.main {
+  padding: 20px 0;
+  background-color: #f1f1f1;
+}
+.main .team-introduce {
+  min-height: 1454px;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+.main .team-introduce .show {
+  display: none;
+}
 
-.aside { width: 300px; margin-right: 20px; }
-.aside > div { padding: 20px 16px; }
-.aside .process { background-color: #fff; margin-bottom: 20px; font-size: 14px; }
-.aside .process .title { font-size: 18px; font-weight: 700; padding-bottom: 14px; border-bottom: 1px solid #e2e2e2; }
-.aside .process ul.sign { margin: 20px 0 -28px 14px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/dotted.png) no-repeat 21px 24px; }
-.aside .process ul.sign li { position: relative; margin-bottom: 28px; }
-.aside .process ul.sign li > span { display: inline-block; }
-.aside .process ul.sign li .step { width: 42px; height: 42px; line-height: 42px; margin-right: 20px; text-align: center; border-radius: 50%; background-color: #eee; color: #666; }
-.aside .process ul.sign li .content { margin-right: 18px; font-size: 16px; }
-.aside .process ul.sign li .tel { position: absolute; left: 66px; top: 30px; font-size: 16px; font-weight: 700; color: #ff8838; }
-.aside .process ul.sign li .enroll { width: 76px; line-height: 22px; text-align: center; background-color: #ff8838; }
-.aside .process ul.sign li .enroll a { width: 100%; height: 100%; color: #fff; }
-.aside .process ul.dynamic { color: #ff8838; padding: 20px 0 0; }
-.aside .process ul.dynamic li { margin-bottom: 20px; }
-.aside .process ul.dynamic li:last-child { margin-bottom: 0; }
-.aside .process ul.dynamic li a { display: inline-block; width: 246px; vertical-align: middle; }
-.aside .fast-sign { padding: 0; }
-.aside .fast-sign .collect { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/signUp.png) no-repeat 0% 0%; margin-left: 0; }
-.aside .fast-sign .collect h2 { font-size: 18px; font-weight: 700; margin-bottom: 20px; }
+.aside {
+  width: 300px;
+  margin-right: 20px;
+}
+.aside > div {
+  padding: 20px 16px;
+}
+.aside .process {
+  background-color: #fff;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.aside .process .title {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.aside .process ul.sign {
+  margin: 20px 0 -28px 14px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/dotted.png) no-repeat 21px 24px;
+}
+.aside .process ul.sign li {
+  position: relative;
+  margin-bottom: 28px;
+}
+.aside .process ul.sign li > span {
+  display: inline-block;
+}
+.aside .process ul.sign li .step {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin-right: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #666;
+}
+.aside .process ul.sign li .content {
+  margin-right: 18px;
+  font-size: 16px;
+}
+.aside .process ul.sign li .tel {
+  position: absolute;
+  left: 66px;
+  top: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff8838;
+}
+.aside .process ul.sign li .enroll {
+  width: 76px;
+  line-height: 22px;
+  text-align: center;
+  background-color: #ff8838;
+}
+.aside .process ul.sign li .enroll a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.aside .process ul.dynamic {
+  color: #ff8838;
+  padding: 20px 0 0;
+}
+.aside .process ul.dynamic li {
+  margin-bottom: 20px;
+}
+.aside .process ul.dynamic li:last-child {
+  margin-bottom: 0;
+}
+.aside .process ul.dynamic li a {
+  display: inline-block;
+  width: 246px;
+  vertical-align: middle;
+}
+.aside .fast-sign {
+  padding: 0;
+}
+.aside .fast-sign .collect {
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/signUp.png) no-repeat 0% 0%;
+  margin-left: 0;
+}
+.aside .fast-sign .collect h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
-.article { width: 880px; }
-.article .title { border-bottom: 1px solid #e2e2e2; }
-.article .title .txt { display: block; font-size: 18px; padding-left: 14px; margin-bottom: 14px; border-left: 2px solid #ff8838; }
-.article .title .txt em { color: #ff8838; }
-.article .top { margin-bottom: 20px; }
-.article .caption { padding: 20px 16px 0px 14px; background-color: #fff; }
-.article .basic-info { padding: 34px 16px 16px 32px; background-color: #fff; font-size: 14px; }
-.article .basic-info ul { max-width: 700px; }
-.article .basic-info ul li { min-width: 250px; margin-right: 20px; margin-bottom: 20px; color: #999; }
-.article .introduce { background-color: #fff; }
-.article .introduce .setting-nav { background-color: #e5e5e5; font-size: 14px; }
-.article .introduce .setting-nav li { padding: 12px 20px; border-right: 1px solid #fff; cursor: pointer; }
-.article .introduce .setting-nav li a { color: #666; }
-.article .introduce .setting-nav li.active { background-color: #543b89; color: #fff; }
-.article .introduce .setting-nav li.active a { color: #fff; }
-.article .introduce .setting-nav li:hover { background-color: #543b89; color: #fff; }
-.article .introduce .setting-nav li:hover a { color: #fff; }
-.article .introduce .data-img { padding: 40px 0 60px 0; }
-.article .introduce .data-img .chart { margin: 0 80px 0 100px; font-size: 14px; }
-.article .introduce .data-img .chart .chart-bg { width: 200px; height: 200px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/chart.jpg) no-repeat 50% 50%; }
-.article .introduce .data-img .percent { min-width: 300px; height: 200px; line-height: 200px; margin-left: 0; padding-left: 80px; border-left: 1px dotted #dcdcdc; }
-.article .introduce .data-img .chart-txt { width: 200px; }
-.article .introduce .team-detail { padding: 0 15px; background-color: #fff; font-size: 14px; }
-.article .introduce .team-detail .title { width: 100%; line-height: 38px; background-color: #e5e5e5; }
-.article .introduce .team-detail .title p { width: 100px; text-align: center; background-color: #543b89; color: #fff; }
-.article .introduce .team-detail .team-content { padding: 30px 0; margin: 0 15px; border-bottom: 1px solid #eaeaea; }
-.article .introduce .team-detail .team-content .lf { margin-right: 40px; }
-.article .introduce .team-detail .team-content .rt { width: 616px; }
-.article .introduce .team-detail .team-content .rt .li-title { font-size: 18px; padding-bottom: 20px; }
-.article .introduce .team-detail .team-content .rt .li-title span { padding-right: 22px; }
-.article .introduce .team-detail .team-content .rt .li-title small { display: inline-block; font-size: 14px; height: 24px; vertical-align: middle; color: #ff8838; }
-.article .introduce .team-detail .team-content .rt p { line-height: 26px; text-align: justify; color: #777; }
-.article .introduce .team-detail .open-more { text-align: center; height: 40px; line-height: 40px; margin: 0 15px; }
-.article .introduce .team-detail .open-more .open-more-btn { width: 100%; height: 100%; background-color: #e6e5e5; cursor: pointer; }
-.article .introduce .team-detail .open-more .open-more-btn span { padding-right: 12px; font-weight: 700; color: #999; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/jiantou.jpg) no-repeat 100% 3px; }
-.article .introduce .team-detail .open-more .open-more-btn span.hidden { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/up.jpg) no-repeat 100% 3px; }
-.article .introduce .scene-img { padding: 28px 30px 0 20px; font-size: 14px; }
-.article .introduce .scene-img ul { margin-right: -22px; }
-.article .introduce .scene-img ul li { margin: 0 22px 38px 0; }
-.article .introduce .scene-img ul li .txt { padding-top: 12px; text-align: center; color: #666; }
-.article .introduce .news-page { padding: 0 14px; }
-.article .introduce .news-page .news-item li { cursor: pointer; padding: 30px 24px 32px 15px; border-bottom: 1px dotted #dcdcdc; }
-.article .introduce .news-page .news-item li:hover { background-color: #eee; }
-.article .introduce .news-page .news-item li:hover .time { color: #ff8838; }
-.article .introduce .news-page .news-item li:hover .news-content h3 { color: #ff8838; }
-.article .introduce .news-page .news-item li .news-date { margin-right: 30px; text-align: center; }
-.article .introduce .news-page .news-item li .news-date .time { font-size: 34px; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #d7d7d7; }
-.article .introduce .news-page .news-item li .news-date .date { color: #a6a6a6; }
-.article .introduce .news-page .news-item li .news-content { width: 720px; font-size: 14px; }
-.article .introduce .news-page .news-item li .news-content .cont-title { font-size: 16px; line-height: 31px; padding-bottom: 18px; }
-.article .introduce .news-page .news-item li .news-content p { line-height: 27px; color: #989898; }
-.article .introduce .question-page { padding: 0 27px; }
-.article .introduce .question-page .question-item { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/problem.png) no-repeat; }
-.article .introduce .question-page .question-item .list { padding: 22px 18px 26px 36px; margin-top: 20px; cursor: pointer; }
-.article .introduce .question-page .question-item .list .list-title { font-weight: 700; padding-left: 26px; margin-bottom: 20px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/doubt.jpg) no-repeat left center; font-size: 16px; }
-.article .introduce .question-page .question-item .list .txt { line-height: 24px; height: 48px; overflow: hidden; color: #777; font-size: 14px; }
-.article .introduce .question-page .question-item .spread { text-align: right; }
-.article .introduce .question-page .question-item .spread i { display: block; width: 100%; height: 20px; cursor: pointer; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/open.jpg) no-repeat 100% 100%; }
-.article .introduce .question-page .question-item .spread i.closeUp { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/close.jpg) no-repeat 100% 100%; }
-.article .detail { padding: 20px 28px 28px 32px; background-color: #fff; font-size: 14px; display: none; }
-.article .detail.active { display: block; }
-.article .detail .no-indent { text-indent: 0; }
-.article .detail .no-margin { margin-bottom: 0; }
-.article .detail p { margin-bottom: 10px; text-indent: 2em; line-height: 31px; text-align: justify; color: #666; }
-.article .detail span { line-height: 31px; text-align: justify; color: #666; }
-.article .detail li { line-height: 31px; text-align: justify; color: #666; }
-.article .detail .img { text-align: center; }
-.article .detail em { font-weight: 700; color: #333; }
-.article .detail .summary { display: block; line-height: 30px; margin-top: 20px; font-weight: 700; text-indent: 0; color: #533797; font-size: 16px; }
-.article .detail .summary-no-margin { display: block; line-height: 30px; font-weight: 700; text-indent: 0; color: #533797; }
-.article .detail .indent { display: block; text-indent: 28px; }
-.article .detail .marginTop { margin-top: 20px; }
-.article .detail .marginTop span { display: block; }
-.article .detail .bright-point { margin-bottom: 16px; }
-.article .order-page { padding: 25px 30px 10px; background: #fff; }
-.article .order-page .hint { height: 74px; line-height: 26px; padding: 14px 90px 0 16px; margin-bottom: 30px; background-color: #f1f1f1; color: #999; font-size: 14px; }
-.article .order-page .collect li { margin-bottom: 26px; font-size: 14px; }
-.article .order-page .collect input { margin: 0; height: 44px; width: 332px; border: solid 1px #e5e5e5; }
-.article .order-page .collect input.order-submit { margin-left: 126px; border: none; }
-.article .order-page .collect select { width: 332px; border: solid 1px #e5e5e5; background: url(https://img.thea.cn/public/platform/thea/201912/hbj/builder/images/icon_1.png) no-repeat 95% #fff; }
-.article .order-page .collect .name { display: inline-block; height: 44px; line-height: 44px; margin-right: 16px; width: 106px; text-align: right; }
-.article .hi-school-outline { padding: 26px 30px 50px 26px; background-color: #fff; }
-.article .hi-school-outline .image-container { width: 320px; margin-right: 24px; }
-.article .hi-school-outline .image-container img { width: 100%; }
-.article .hi-school-outline .right-section { width: 480px; font-size: 14px; }
-.article .hi-school-outline .right-section .cousre-setting { font-size: 22px; color: #666; text-indent: -12px; }
-.article .hi-school-outline .right-section .consult { margin: 22px 0 28px 0; }
-.article .hi-school-outline .right-section .consult a { display: inline-block; position: relative; border-radius: 3px; padding: 2px 9px 2px 26px; margin-right: 18px; }
-.article .hi-school-outline .right-section .consult a.test { border: 1px solid #ff8838; color: #ff8838; }
-.article .hi-school-outline .right-section .consult a.test i { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/write.png) no-repeat 50% 50%; }
-.article .hi-school-outline .right-section .consult a.zx { background-color: #ff8838; color: #fff; }
-.article .hi-school-outline .right-section .consult a.zx i { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/msg.png) no-repeat 50% 50%; }
-.article .hi-school-outline .right-section .consult a i { position: absolute; z-index: 10; height: 23px; width: 15px; left: 7px; top: 0px; }
-.article .hi-school-outline .right-section ul { width: 470px; margin-bottom: 13px; }
-.article .hi-school-outline .right-section ul li { width: 230px; line-height: 32px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.article .hi-school-outline .right-section .tel { display: inline-block; width: 100%; height: 40px; line-height: 40px; padding-left: 34px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/tel.png) no-repeat 10px 50% #f4f4f4; font-size: 16px; color: #666; }
-.article .hi-school-outline .right-section .tel .tel-num { font-size: 20px; color: #ff8838; vertical-align: bottom; }
+.article {
+  width: 880px;
+}
+.article .title {
+  border-bottom: 1px solid #e2e2e2;
+}
+.article .title .txt {
+  display: block;
+  font-size: 18px;
+  padding-left: 14px;
+  margin-bottom: 14px;
+  border-left: 2px solid #ff8838;
+}
+.article .title .txt em {
+  color: #ff8838;
+}
+.article .top {
+  margin-bottom: 20px;
+}
+.article .caption {
+  padding: 20px 16px 0px 14px;
+  background-color: #fff;
+}
+.article .basic-info {
+  padding: 34px 16px 16px 32px;
+  background-color: #fff;
+  font-size: 14px;
+}
+.article .basic-info ul {
+  max-width: 700px;
+}
+.article .basic-info ul li {
+  min-width: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: #999;
+}
+.article .introduce {
+  background-color: #fff;
+}
+.article .introduce .setting-nav {
+  background-color: #e5e5e5;
+  font-size: 14px;
+}
+.article .introduce .setting-nav li {
+  padding: 12px 20px;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+}
+.article .introduce .setting-nav li a {
+  color: #666;
+}
+.article .introduce .setting-nav li.active {
+  background-color: #543b89;
+  color: #fff;
+}
+.article .introduce .setting-nav li.active a {
+  color: #fff;
+}
+.article .introduce .setting-nav li:hover {
+  background-color: #543b89;
+  color: #fff;
+}
+.article .introduce .setting-nav li:hover a {
+  color: #fff;
+}
+.article .introduce .data-img {
+  padding: 40px 0 60px 0;
+}
+.article .introduce .data-img .chart {
+  margin: 0 80px 0 100px;
+  font-size: 14px;
+}
+.article .introduce .data-img .chart .chart-bg {
+  width: 200px;
+  height: 200px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/chart.jpg) no-repeat 50% 50%;
+}
+.article .introduce .data-img .percent {
+  min-width: 300px;
+  height: 200px;
+  line-height: 200px;
+  margin-left: 0;
+  padding-left: 80px;
+  border-left: 1px dotted #dcdcdc;
+}
+.article .introduce .data-img .chart-txt {
+  width: 200px;
+}
+.article .introduce .team-detail {
+  padding: 0 15px;
+  background-color: #fff;
+  font-size: 14px;
+}
+.article .introduce .team-detail .title {
+  width: 100%;
+  line-height: 38px;
+  background-color: #e5e5e5;
+}
+.article .introduce .team-detail .title p {
+  width: 100px;
+  text-align: center;
+  background-color: #543b89;
+  color: #fff;
+}
+.article .introduce .team-detail .team-content {
+  padding: 30px 0;
+  margin: 0 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+.article .introduce .team-detail .team-content .lf {
+  margin-right: 40px;
+}
+.article .introduce .team-detail .team-content .rt {
+  width: 616px;
+}
+.article .introduce .team-detail .team-content .rt .li-title {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.article .introduce .team-detail .team-content .rt .li-title span {
+  padding-right: 22px;
+}
+.article .introduce .team-detail .team-content .rt .li-title small {
+  display: inline-block;
+  font-size: 14px;
+  height: 24px;
+  vertical-align: middle;
+  color: #ff8838;
+}
+.article .introduce .team-detail .team-content .rt p {
+  line-height: 26px;
+  text-align: justify;
+  color: #777;
+}
+.article .introduce .team-detail .open-more {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 15px;
+}
+.article .introduce .team-detail .open-more .open-more-btn {
+  width: 100%;
+  height: 100%;
+  background-color: #e6e5e5;
+  cursor: pointer;
+}
+.article .introduce .team-detail .open-more .open-more-btn span {
+  padding-right: 12px;
+  font-weight: 700;
+  color: #999;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/jiantou.jpg) no-repeat 100% 3px;
+}
+.article .introduce .team-detail .open-more .open-more-btn span.hidden {
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/up.jpg) no-repeat 100% 3px;
+}
+.article .introduce .scene-img {
+  padding: 28px 30px 0 20px;
+  font-size: 14px;
+}
+.article .introduce .scene-img ul {
+  margin-right: -22px;
+}
+.article .introduce .scene-img ul li {
+  margin: 0 22px 38px 0;
+}
+.article .introduce .scene-img ul li .txt {
+  padding-top: 12px;
+  text-align: center;
+  color: #666;
+}
+.article .introduce .news-page {
+  padding: 0 14px;
+}
+.article .introduce .news-page .news-item li {
+  cursor: pointer;
+  padding: 30px 24px 32px 15px;
+  border-bottom: 1px dotted #dcdcdc;
+}
+.article .introduce .news-page .news-item li:hover {
+  background-color: #eee;
+}
+.article .introduce .news-page .news-item li:hover .time {
+  color: #ff8838;
+}
+.article .introduce .news-page .news-item li:hover .news-content h3 {
+  color: #ff8838;
+}
+.article .introduce .news-page .news-item li .news-date {
+  margin-right: 30px;
+  text-align: center;
+}
+.article .introduce .news-page .news-item li .news-date .time {
+  font-size: 34px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.article .introduce .news-page .news-item li .news-date .date {
+  color: #a6a6a6;
+}
+.article .introduce .news-page .news-item li .news-content {
+  width: 720px;
+  font-size: 14px;
+}
+.article .introduce .news-page .news-item li .news-content .cont-title {
+  font-size: 16px;
+  line-height: 31px;
+  padding-bottom: 18px;
+}
+.article .introduce .news-page .news-item li .news-content p {
+  line-height: 27px;
+  color: #989898;
+}
+.article .introduce .question-page {
+  padding: 0 27px;
+}
+.article .introduce .question-page .question-item {
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/problem.png) no-repeat;
+}
+.article .introduce .question-page .question-item .list {
+  padding: 22px 18px 26px 36px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.article .introduce .question-page .question-item .list .list-title {
+  font-weight: 700;
+  padding-left: 26px;
+  margin-bottom: 20px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/doubt.jpg) no-repeat left center;
+  font-size: 16px;
+}
+.article .introduce .question-page .question-item .list .txt {
+  line-height: 24px;
+  height: 48px;
+  overflow: hidden;
+  color: #777;
+  font-size: 14px;
+}
+.article .introduce .question-page .question-item .spread {
+  text-align: right;
+}
+.article .introduce .question-page .question-item .spread i {
+  display: block;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/open.jpg) no-repeat 100% 100%;
+}
+.article .introduce .question-page .question-item .spread i.closeUp {
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/close.jpg) no-repeat 100% 100%;
+}
+.article .detail {
+  padding: 20px 28px 28px 32px;
+  background-color: #fff;
+  font-size: 14px;
+  display: none;
+}
+.article .detail.active {
+  display: block;
+}
+.article .detail .no-indent {
+  text-indent: 0;
+}
+.article .detail .no-margin {
+  margin-bottom: 0;
+}
+.article .detail p {
+  margin-bottom: 10px;
+  text-indent: 2em;
+  line-height: 31px;
+  text-align: justify;
+  color: #666;
+}
+.article .detail span {
+  line-height: 31px;
+  text-align: justify;
+  color: #666;
+}
+.article .detail li {
+  line-height: 31px;
+  text-align: justify;
+  color: #666;
+}
+.article .detail .img {
+  text-align: center;
+}
+.article .detail em {
+  font-weight: 700;
+  color: #333;
+}
+.article .detail .summary {
+  display: block;
+  line-height: 30px;
+  margin-top: 20px;
+  font-weight: 700;
+  text-indent: 0;
+  color: #533797;
+  font-size: 16px;
+}
+.article .detail .summary-no-margin {
+  display: block;
+  line-height: 30px;
+  font-weight: 700;
+  text-indent: 0;
+  color: #533797;
+}
+.article .detail .indent {
+  display: block;
+  text-indent: 28px;
+}
+.article .detail .marginTop {
+  margin-top: 20px;
+}
+.article .detail .marginTop span {
+  display: block;
+}
+.article .detail .bright-point {
+  margin-bottom: 16px;
+}
+.article .order-page {
+  padding: 25px 30px 10px;
+  background: #fff;
+}
+.article .order-page .hint {
+  height: 74px;
+  line-height: 26px;
+  padding: 14px 90px 0 16px;
+  margin-bottom: 30px;
+  background-color: #f1f1f1;
+  color: #999;
+  font-size: 14px;
+}
+.article .order-page .collect li {
+  margin-bottom: 26px;
+  font-size: 14px;
+}
+.article .order-page .collect input {
+  margin: 0;
+  height: 44px;
+  width: 332px;
+  border: solid 1px #e5e5e5;
+}
+.article .order-page .collect input.order-submit {
+  margin-left: 126px;
+  border: none;
+}
+.article .order-page .collect select {
+  width: 332px;
+  border: solid 1px #e5e5e5;
+  background: url(https://img.thea.cn/public/platform/thea/201912/hbj/builder/images/icon_1.png) no-repeat 95% #fff;
+}
+.article .order-page .collect .name {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  margin-right: 16px;
+  width: 106px;
+  text-align: right;
+}
+.article .hi-school-outline {
+  padding: 26px 30px 50px 26px;
+  background-color: #fff;
+}
+.article .hi-school-outline .image-container {
+  width: 320px;
+  margin-right: 24px;
+}
+.article .hi-school-outline .image-container img {
+  width: 100%;
+}
+.article .hi-school-outline .right-section {
+  width: 480px;
+  font-size: 14px;
+}
+.article .hi-school-outline .right-section .cousre-setting {
+  font-size: 22px;
+  color: #666;
+  text-indent: -12px;
+}
+.article .hi-school-outline .right-section .consult {
+  margin: 22px 0 28px 0;
+}
+.article .hi-school-outline .right-section .consult a {
+  display: inline-block;
+  position: relative;
+  border-radius: 3px;
+  padding: 2px 9px 2px 26px;
+  margin-right: 18px;
+}
+.article .hi-school-outline .right-section .consult a.test {
+  border: 1px solid #ff8838;
+  color: #ff8838;
+}
+.article .hi-school-outline .right-section .consult a.test i {
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/write.png) no-repeat 50% 50%;
+}
+.article .hi-school-outline .right-section .consult a.zx {
+  background-color: #ff8838;
+  color: #fff;
+}
+.article .hi-school-outline .right-section .consult a.zx i {
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/msg.png) no-repeat 50% 50%;
+}
+.article .hi-school-outline .right-section .consult a i {
+  position: absolute;
+  z-index: 10;
+  height: 23px;
+  width: 15px;
+  left: 7px;
+  top: 0px;
+}
+.article .hi-school-outline .right-section ul {
+  width: 470px;
+  margin-bottom: 13px;
+}
+.article .hi-school-outline .right-section ul li {
+  width: 230px;
+  line-height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.article .hi-school-outline .right-section .tel {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 34px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/tel.png) no-repeat 10px 50% #f4f4f4;
+  font-size: 16px;
+  color: #666;
+}
+.article .hi-school-outline .right-section .tel .tel-num {
+  font-size: 20px;
+  color: #ff8838;
+  vertical-align: bottom;
+}
 
-.friend { padding-top: 30px; }
-.friend .link-title { font-size: 26px; color: #444; padding-bottom: 30px; }
-.friend .link-title em { color: #6745a6; }
-.friend .link-title small { padding-left: 10px; font-size: 24px; color: #d1d1d1; }
-.friend .lian { margin-right: -20px; }
-.friend .lian li { float: left; font-size: 14px; }
-.friend li { padding: 8px 12px; margin-right: 20px; margin-bottom: 18px; background-color: #f0f0f0; color: #666; }
+.friend {
+  padding-top: 30px;
+}
+.friend .link-title {
+  font-size: 26px;
+  color: #444;
+  padding-bottom: 30px;
+}
+.friend .link-title em {
+  color: #6745a6;
+}
+.friend .link-title small {
+  padding-left: 10px;
+  font-size: 24px;
+  color: #d1d1d1;
+}
+.friend .lian {
+  margin-right: -20px;
+}
+.friend .lian li {
+  float: left;
+  font-size: 14px;
+}
+.friend li {
+  padding: 8px 12px;
+  margin-right: 20px;
+  margin-bottom: 18px;
+  background-color: #f0f0f0;
+  color: #666;
+}
 
-.footsusp { position: fixed; z-index: 62; bottom: 0; left: 0; width: 100%; height: 126px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/footerbg.jpg) no-repeat center; background-size: auto 100%; }
-.footsusp .footsusp-icon1, .footsusp .footsusp-icon2, .footsusp .footsusp-close { position: absolute; }
-.footsusp .footsusp-icon1 { top: -60px; left: 0; width: 118px; height: 150px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/footericon1.png); }
-.footsusp .footsusp-icon2 { top: -60px; right: 0; width: 220px; height: 138px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/footericon2.png); }
-.footsusp .footsusp-close { top: 0; right: 18%; width: 35px; height: 35px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/footerclose.png); cursor: pointer; }
-.footsusp .footsusp-fl { float: left; width: 760px; font-size: 14px; }
-.footsusp .footsusp-fl input { margin-right: 12px; width: 170px; height: 34px; border: 0; border-radius: 3px; line-height: 34px; text-indent: 1em; background: #fff; }
-.footsusp .footsusp-fl input[type="submit"] { width: 114px; height: 34px; border: 0; border-radius: 3px; color: #fff; background: #ff724f; text-indent: 0; }
-.footsusp .susp-title { font-size: 24px; font-weight: bold; color: #fffc00; line-height: 65px; }
-.footsusp .footsusp-fr { float: right; margin-top: 56px; padding-left: 60px; width: 310px; *width: 250px; color: #fff; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/footertel.png) no-repeat left center; }
-.footsusp .footsusp-fr span { font-size: 12px; }
-.footsusp .footsusp-fr p { font-size: 16px; font-weight: bold; }
+.footsusp {
+  position: fixed;
+  z-index: 62;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 126px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/footerbg.jpg) no-repeat center;
+  background-size: auto 100%;
+}
+.footsusp .footsusp-icon1,
+.footsusp .footsusp-icon2,
+.footsusp .footsusp-close {
+  position: absolute;
+}
+.footsusp .footsusp-icon1 {
+  top: -60px;
+  left: 0;
+  width: 118px;
+  height: 150px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/footericon1.png);
+}
+.footsusp .footsusp-icon2 {
+  top: -60px;
+  right: 0;
+  width: 220px;
+  height: 138px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/footericon2.png);
+}
+.footsusp .footsusp-close {
+  top: 0;
+  right: 18%;
+  width: 35px;
+  height: 35px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/footerclose.png);
+  cursor: pointer;
+}
+.footsusp .footsusp-fl {
+  float: left;
+  width: 760px;
+  font-size: 14px;
+}
+.footsusp .footsusp-fl input {
+  margin-right: 12px;
+  width: 170px;
+  height: 34px;
+  border: 0;
+  border-radius: 3px;
+  line-height: 34px;
+  text-indent: 1em;
+  background: #fff;
+}
+.footsusp .footsusp-fl input[type="submit"] {
+  width: 114px;
+  height: 34px;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  background: #ff724f;
+  text-indent: 0;
+}
+.footsusp .susp-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fffc00;
+  line-height: 65px;
+}
+.footsusp .footsusp-fr {
+  float: right;
+  margin-top: 56px;
+  padding-left: 60px;
+  width: 310px;
+  *width: 250px;
+  color: #fff;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/footertel.png) no-repeat left center;
+}
+.footsusp .footsusp-fr span {
+  font-size: 12px;
+}
+.footsusp .footsusp-fr p {
+  font-size: 16px;
+  font-weight: bold;
+}
 
 /*thea左侧自定义漂浮*/
-#msRfloat { width: 121px; height: 306px; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/gjfloat_r.png) no-repeat; position: fixed; top: 20%; right: 1%; z-index: 100; }
-#msRfloat a { display: block; width: 100%; height: 91%; }
-#msRfloat #toTop { display: block; width: 100%; height: 9%; cursor: pointer; }
+#msRfloat {
+  width: 121px;
+  height: 306px;
+  background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/gjfloat_r.png) no-repeat;
+  position: fixed;
+  top: 20%;
+  right: 1%;
+  z-index: 100;
+}
+#msRfloat a {
+  display: block;
+  width: 100%;
+  height: 91%;
+}
+#msRfloat #toTop {
+  display: block;
+  width: 100%;
+  height: 9%;
+  cursor: pointer;
+}
 
 /*分页*/
-.page-wrap { width: 100%; display: -webkit-box; display: box; box-orient: horizontal; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
-.page-wrap .page { margin: 30px auto; line-height: 34px; box-pack: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-.page-wrap .page a { color: #666; display: block; float: left; width: 32px; height: 32px; text-align: center; line-height: 32px; background: #fff; font-size: 14px; margin-right: 10px; border: 1px solid #ddd; border-radius: 4px; }
-.page-wrap .page a.first, .page-wrap .page a.end { width: 62px; background: #eee; }
-.page-wrap .page a.next, .page-wrap .page a.prev { width: 90px; background: #eee; }
-.page-wrap .page a.cur, .page-wrap .page a:hover { background: #f05630; color: #fff; border-color: #f05630; }
-.page-wrap .page span { display: block; float: left; width: 32px; height: 32px; line-height: 25px; font-size: 14px; color: #212b4c; margin-left: -10px; }
-.page-wrap .page span.total { width: auto; line-height: 34px; margin-right: 10px; color: #666; }
+.page-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: box;
+  box-orient: horizontal;
+  display: flex;
+  flex-direction: row;
+}
+.page-wrap .page {
+  margin: 30px auto;
+  line-height: 34px;
+  box-pack: center;
+  justify-content: center;
+}
+.page-wrap .page a {
+  color: #666;
+  display: block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  background: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.page-wrap .page a.first, .page-wrap .page a.end {
+  width: 62px;
+  background: #eee;
+}
+.page-wrap .page a.next, .page-wrap .page a.prev {
+  width: 90px;
+  background: #eee;
+}
+.page-wrap .page a.cur, .page-wrap .page a:hover {
+  background: #f05630;
+  color: #fff;
+  border-color: #f05630;
+}
+.page-wrap .page span {
+  display: block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #212b4c;
+  margin-left: -10px;
+}
+.page-wrap .page span.total {
+  width: auto;
+  line-height: 34px;
+  margin-right: 10px;
+  color: #666;
+}
 
-.news-ter { background: #fff; font-size: 14px; padding: 30px; }
-.news-ter .ter-title { font-size: 22px; font-weight: bold; text-align: center; margin-bottom: 10px; }
-.news-ter .publish { text-align: center; }
-.news-ter .publish img { margin-right: 10px; }
-.news-ter .publish span { margin-right: 20px; }
-.news-ter .sign-up { display: block; padding: 20px 0; }
-.news-ter .sign-up img { width: 100%; }
-.news-ter .subtitle { font-size: 22px; margin-bottom: 20px; }
-.news-ter .ter-page { padding-top: 20px; }
-.news-ter .ter-page a { float: left; }
-.news-ter .ter-page a:nth-of-type(2) { float: right; }
+.news-ter {
+  background: #fff;
+  font-size: 14px;
+  padding: 30px;
+}
+.news-ter .ter-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.news-ter .publish {
+  text-align: center;
+}
+.news-ter .publish img {
+  margin-right: 10px;
+}
+.news-ter .publish span {
+  margin-right: 20px;
+}
+.news-ter .sign-up {
+  display: block;
+  padding: 20px 0;
+}
+.news-ter .sign-up img {
+  width: 100%;
+}
+.news-ter .subtitle {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.news-ter .ter-page {
+  padding-top: 20px;
+}
+.news-ter .ter-page a {
+  float: left;
+}
+.news-ter .ter-page a:nth-of-type(2) {
+  float: right;
+}
 
-.wap-show { display: none; }
+.wap-show {
+  display: none;
+}
 
-@media screen and (max-width: 750px) { html, body { overflow-x: hidden; }
-  body { font-size: 0.3466666667rem; color: #333333; padding-bottom: 1.4133333333rem; }
-  .nav ul:before, .nav ul:after { display: none; }
-  .infos .infos-cont li .txt, .query .query-cont li .txt, .news-list li .item-r .r-title { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
-  .school .sc-cont li::before, .home-lcm .lcm-cont li::before, .infos .infos-cont li::before, .lessons .lessons-cont li::before { content: ""; display: inline-block; width: 0.0533333333rem; height: 0.0533333333rem; background-color: #7356ac; vertical-align: middle; margin-right: 0.16rem; border-radius: 50%; }
-  .wrap { width: 10rem; }
-  .space-between, .header, .wap-susp .susp-cont ul, .home-lcm .cont-btn, .home-lcm .cont-course, .teacher-lcm .tab-detail li, .teacher-lcm .tab-head ul, .news-list li .item, .teacher-list li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-  .space-around, .enrol .enrol-cont ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; }
-  .lf, .rt { float: none; }
-  .wap-show { display: block; }
+@media screen and (max-width: 750px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 0.3466666667rem;
+    color: #333333;
+    padding-bottom: 1.4133333333rem;
+  }
+
+  .nav ul:before, .nav ul:after {
+    display: none;
+  }
+
+  .infos .infos-cont li .txt, .query .query-cont li .txt, .news-list li .item-r .r-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .school .sc-cont li::before, .home-lcm .lcm-cont li::before, .infos .infos-cont li::before, .lessons .lessons-cont li::before {
+    content: "";
+    display: inline-block;
+    width: 0.0533333333rem;
+    height: 0.0533333333rem;
+    background-color: #7356ac;
+    vertical-align: middle;
+    margin-right: 0.16rem;
+    border-radius: 50%;
+  }
+
+  .wrap {
+    width: 10rem;
+  }
+
+  .space-between, .header, .wap-susp .susp-cont ul, .home-lcm .cont-btn, .home-lcm .cont-course, .teacher-lcm .tab-detail li, .teacher-lcm .tab-head ul, .news-list li .item, .teacher-list li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .space-around, .enrol .enrol-cont ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .lf,
+  .rt {
+    float: none;
+  }
+
+  .wap-show {
+    display: block;
+  }
+
   /*页面头部*/
-  .header { height: 1.3333333333rem; padding: 0 0.32rem; }
-  .header .lf img { padding-top: 0; height: 0.72rem; margin-right: 0.1333333333rem; vertical-align: middle; }
-  .header .subtitle { vertical-align: middle; font-size: 0.32rem; margin-top: 0; margin-left: 0; padding-left: 0; border-left: none; }
-  .header .rt { display: none; }
-  .school-title { display: block; height: 1.04rem; line-height: 1.04rem; background-color: #543b89; font-size: 0.4rem; color: #ffffff; text-align: center; }
-  .nav { border-top: 1px solid #eee; padding: 0 0.32rem; }
-  .nav ul { width: 90%; overflow-x: scroll; white-space: nowrap; }
-  .nav ul li { display: inline-block; float: none; padding: 0.2133333333rem 0px; }
-  .nav ul li a { padding: 0 0.1333333333rem 0.2133333333rem; border-right: none; font-size: 0.3733333333rem; }
-  .nav ul li.active { background-color: #fff; }
-  .nav ul li.active a { color: #543b89; }
-  .nav ul li.active::after { display: block; content: ""; width: 0.6rem; height: 0.0666666667rem; background-color: #543b89; margin: 0 auto; }
-  .banner { display: none; }
-  .wap-banner { background-color: #f5f6f8; padding: 0.32rem; text-align: center; }
-  .wap-banner a { display: block; width: 100%; }
-  .wap-banner img { border-radius: 0.1066666667rem; }
-  .school { background-color: #f5f6f8; padding: 0 0.32rem 0.4rem; }
-  .school .sc-head { font-size: 0.3733333333rem; line-height: 0.4266666667rem; color: #444444; padding-bottom: 0.2666666667rem; }
-  .school .sc-head ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
-  .school .sc-head li { border-right: dashed 1px #4b4b4b; padding: 0 0.3333333333rem; }
-  .school .sc-head li.cur { font-weight: bold; font-size: 0.4266666667rem; }
-  .school .sc-head li:last-child { border-right: none; }
-  .school .sc-cont { width: 100%; background-color: #ffffff; border-radius: 0.1066666667rem; padding: 0.2666666667rem 0.5333333333rem; }
-  .school .sc-cont .cont-item { display: none; }
-  .school .sc-cont .cont-item.cur { display: block; }
-  .school .sc-cont ul { padding-bottom: 0.2666666667rem; margin-bottom: 0.2666666667rem; border-bottom: 1px dotted #c1c1c1; }
-  .school .sc-cont ul:last-child { margin-bottom: 0; border-bottom: none; }
-  .school .sc-cont .ul-title { font-size: 0.4rem; height: 0.4rem; line-height: 0.4rem; color: #543b89; margin-bottom: 0.1333333333rem; }
-  .school .sc-cont .ul-title img { height: 100%; margin-right: 0.1066666667rem; }
-  .school .sc-cont li { line-height: 0.56rem; color: #444444; }
-  .school .sc-cont li .key { color: #999999; }
-  .school .sc-cont p { font-size: 0.3466666667rem; text-align: justify; margin-bottom: 0.1333333333rem; }
-  .enrol { background-color: #f5f6f8; padding: 0 0.32rem 0.2666666667rem; }
-  .enrol .enrol-title { font-size: 0.4266666667rem; line-height: 0.4533333333rem; padding: 0 0.32rem 0.2666666667rem; }
-  .enrol .enrol-cont { padding: 2.16rem 0 0.56rem; border-radius: 0.1066666667rem; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/bg_2.png) no-repeat center 30% #fff; background-size: 90% auto; }
-  .apply { padding: 0 0.32rem 0.4rem; background-color: #f5f6f8; }
-  .apply .apply-cont { padding: 0.4rem 0; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/bg_3.png) no-repeat; background-size: 100% 100%; border-radius: 0.1066666667rem; }
-  .apply .apply-cont .cont-title { font-size: 0.4266666667rem; line-height: 0.4533333333rem; color: #ff6600; text-align: center; margin-bottom: 0.2666666667rem; }
-  .apply .apply-cont.pure { background: #543b89; }
-  .apply .apply-cont.pure .cont-title { color: #ffffff; }
-  .apply .apply-cont.pure .cont-title span { color: #ff724f; }
-  .apply .sign-in { padding: 0 0.3733333333rem; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  .apply input, .apply select { width: 48%; height: 1.0666666667rem; line-height: 1.0666666667rem; font-size: 0.3733333333rem; border-radius: 0.1333333333rem; border: none; margin-bottom: 0.2133333333rem; }
-  .apply select { padding: 0 1em; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/sel.png) no-repeat #fff 90% center; background-size: 0.2266666667rem 0.1466666667rem; }
-  .apply input { margin-right: 4%; text-indent: 1em; }
-  .apply .full-line { width: 100%; margin-right: 0; }
-  .apply input[type="submit"] { text-indent: 0; background-color: #ff8838; color: #fff; }
-  .wap-susp { position: fixed; bottom: 0; width: 100%; background-color: #ffffff; -webkit-box-shadow: 0px -0.12rem 0.2666666667rem 0px rgba(145, 145, 145, 0.15); box-shadow: 0px -0.12rem 0.2666666667rem 0px rgba(145, 145, 145, 0.15); border-radius: 0.4rem 0.4rem 0px 0px; z-index: 200; }
-  .wap-susp .susp-cont { height: 1.4133333333rem; padding: 0.3466666667rem 0; }
-  .wap-susp .susp-cont ul { height: 100%; }
-  .wap-susp .susp-cont li { width: 25%; height: 0.72rem; border-right: 1px dotted #808080; }
-  .wap-susp .susp-cont li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: -0.16rem; }
-  .wap-susp .susp-cont li .icon { display: block; width: 0.4666666667rem; height: 0.48rem; margin-bottom: 0.1333333333rem; }
-  .wap-susp .susp-cont li:first-child .icon { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/home_nor.png) no-repeat; background-size: 100% auto; }
-  .wap-susp .susp-cont li:first-child.cur .icon { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/home_sel.png) no-repeat; background-size: 100% auto; }
-  .wap-susp .susp-cont li:nth-of-type(2) .icon { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/open_nor.png) no-repeat; background-size: 100% auto; }
-  .wap-susp .susp-cont li:nth-of-type(2).cur .icon { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/open_sel.png) no-repeat; background-size: 100% auto; }
-  .wap-susp .susp-cont li:nth-of-type(3) .icon { width: 0.52rem; height: 0.52rem; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/visit_nor.png) no-repeat; background-size: 100% 100%; }
-  .wap-susp .susp-cont li:nth-of-type(3).cur .icon { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/visit_sel.png) no-repeat; background-size: 100% auto; }
-  .wap-susp .susp-cont li:nth-of-type(4) .icon { width: 0.52rem; height: 0.5333333333rem; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/tel_nor.png) no-repeat; background-size: 100% 100%; }
-  .wap-susp .susp-cont li:nth-of-type(4).cur .icon { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/tel_sel.png) no-repeat; background-size: 100% auto; }
-  .wap-susp .susp-cont li:last-child { border-right: none; }
-  .load-more { height: 1.0666666667rem; line-height: 1.0666666667rem; background-color: #e5e5e5; border-radius: 0.1066666667rem; font-size: 0.3733333333rem; color: #444444; text-align: center; }
-  .issue-list { background-color: #f5f6f8; padding: 0.32rem 0.32rem; }
-  .issue-list li { background-color: #ffffff; border-radius: 0.1066666667rem; padding: 0 0.2933333333rem 0.2666666667rem; line-height: 1.5; margin-bottom: 0.32rem; }
-  .issue-list li .item-w { font-size: 0.4rem; border-bottom: 1px dotted #cdcdcd; padding: 0.2666666667rem 0 0.2666666667rem 0.6933333333rem; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/icon_2.png) no-repeat left 0.4rem; background-size: 0.3466666667rem auto; }
-  .issue-list li .item-d { color: #666666; padding: 0.2666666667rem 0 0 0.6933333333rem; margin-bottom: 0.2666666667rem; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
-  .issue-list li .item-d.show { display: block; }
-  .issue-list li .fold { font-size: 0.2933333333rem; line-height: 0.5333333333rem; color: #444444; text-align: center; cursor: pointer; }
-  .issue-list li .fold span { vertical-align: middle; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/down.png) no-repeat right center; background-size: 0.24rem 0.16rem; padding-right: 0.4rem; }
-  .issue-list li .down { color: #4b4b4b; }
-  .issue-list li .down span { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/up.png) no-repeat right center; background-size: 0.24rem 0.16rem; }
-  .lcm-title { font-size: 0.4266666667rem; line-height: 0.4533333333rem; margin-bottom: 0.2666666667rem; }
-  .lcm-title span { color: #543b89; }
-  .home-lcm { background-color: #f5f6f8; padding: 0 0.32rem 0.4rem; }
-  .home-lcm .lcm-cont { background-color: #ffffff; border-radius: 0.1066666667rem; padding: 0.4rem; }
-  .home-lcm .lcm-cont ul { border-bottom: 1px dotted #c1c1c1; padding-bottom: 0.2666666667rem; }
-  .home-lcm .lcm-cont li { line-height: 0.56rem; color: #444444; }
-  .home-lcm .lcm-cont li .key { color: #999999; }
-  .home-lcm .lcm-cont li .key .empty { display: inline-block; width: 2em; height: 100%; }
-  .home-lcm .lcm-cont .cont-text { line-height: 0.56rem; letter-spacing: 0px; color: #444444; padding: 0.2666666667rem 0.2133333333rem 0; text-align: justify; }
-  .home-lcm .lcm-cont .cont-text p { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
-  .home-lcm .lcm-cont .cont-text p.show { display: block; }
-  .home-lcm .lcm-cont .cont-text .detail { color: #ff724f; }
-  .home-lcm .cont-btn { padding-top: 0.2666666667rem; }
-  .home-lcm .cont-btn a { width: 48%; font-size: 0.3733333333rem; height: 1.0666666667rem; line-height: 1.0666666667rem; -webkit-box-shadow: -0.04rem 0.0266666667rem 0.1733333333rem 0px rgba(255, 114, 79, 0.44); box-shadow: -0.04rem 0.0266666667rem 0.1733333333rem 0px rgba(255, 114, 79, 0.44); border-radius: 0.08rem; border: solid 1px #ff7653; text-align: center; color: #ff724f; }
-  .home-lcm .cont-btn a.active { background-image: linear-gradient(-30deg, #ff724f 0%, #fe8d72 100%); color: #fff; }
-  .home-lcm .cont-course { border-bottom: 1px dotted #c1c1c1; padding-bottom: 0.2666666667rem; }
-  .home-lcm .cont-course .course-l { width: 46%; }
-  .home-lcm .cont-course .course-r { width: 48%; }
-  .home-lcm .cont-course .course-r ul { border-bottom: none; }
-  .home-lcm .cont-course .course-r ul li .star { height: 0.28rem; vertical-align: middle; }
-  .good { background-color: #f5f6f8; padding: 0 0.32rem 0.4rem; }
-  .good .good-cont ul { white-space: nowrap; overflow-x: scroll; }
-  .good .good-cont ul li { display: inline-block; width: 5.08rem; background-color: #ffffff; border-radius: 0.1066666667rem; margin-right: 0.2666666667rem; }
-  .good .good-cont ul li p { white-space: initial; }
-  .good .good-cont ul li.active { background-color: #ff8838; -webkit-box-shadow: -0.0133333333rem 0.1066666667rem 0.0933333333rem 0px rgba(255, 136, 56, 0.3); box-shadow: -0.0133333333rem 0.1066666667rem 0.0933333333rem 0px rgba(255, 136, 56, 0.3); color: #fff; }
-  .good .good-cont ul li.active .item-title::after { background-color: #fff; }
-  .good .good-cont ul .cont-item { padding: 0.4rem 0.2666666667rem; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  .good .good-cont ul .cont-item img { width: 0.8rem; height: 0.68rem; margin-bottom: 0.2rem; }
-  .good .good-cont ul .cont-item .item-title { font-size: 0.4rem; padding-bottom: 0.2133333333rem; margin-bottom: 0.2666666667rem; position: relative; }
-  .good .good-cont ul .cont-item .item-title::after { display: inline-block; content: ""; width: 0.6666666667rem; height: 1px; background-color: #ff8838; position: absolute; left: 0; right: 0; bottom: 0; margin: auto; }
-  .teacher-lcm { background-color: #f5f6f8; padding: 0 0.32rem 0.4rem; }
-  .teacher-lcm .tea-cont { background-color: #ffffff; border-radius: 0.1066666667rem; padding: 0.32rem 0.2666666667rem; }
-  .teacher-lcm .item-l { width: 40%; }
-  .teacher-lcm .item-l img { width: 100%; }
-  .teacher-lcm .item-r { width: 56%; }
-  .teacher-lcm .item-r .r-title { font-size: 0.4rem; margin-bottom: 0.1333333333rem; }
-  .teacher-lcm .item-r p { font-size: 0.32rem; color: #666666; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; }
-  .teacher-lcm .tab-detail { margin-bottom: 0.2666666667rem; }
-  .teacher-lcm .tab-detail li { display: none; }
-  .teacher-lcm .tab-detail li.cur { display: -webkit-box; display: -ms-flexbox; display: flex; }
-  .teacher-lcm .tab-head li { width: 18.6%; }
-  .teacher-lcm .tab-head li.cur { border: solid 1px #ff8838; }
-  .teacher-lcm .tab-head .more { width: 18.6%; background-color: #ededed; }
-  .scene { background-color: #f5f6f8; padding: 0 0.32rem 0.4rem; position: relative; }
-  .scene .scene-cont { padding: 0.3466666667rem; background-color: #ffffff; border-radius: 0.1066666667rem; }
-  .scene .swiper1 { padding-bottom: 0.5066666667rem; }
-  .scene .swiper1 .swiper-pagination-bullets { bottom: 0; }
-  .scene .swiper1 .swiper-pagination-bullet-active { width: 0.32rem; border-radius: 0.16rem; background-color: #543b89; }
-  .scene .swiper1-arrows { width: 0.5466666667rem; height: 0.88rem; line-height: 0.88rem; border-radius: 0.04rem; opacity: 0.83; color: #fff; text-align: center; background-color: #ff8838; font-size: 0.48rem; position: absolute; top: 0; bottom: 0; margin: auto; }
-  .scene .swiper-button-disabled { background-color: #363636; }
-  .scene .prev { left: 0; }
-  .scene .next { right: 0; }
-  .infos { background-color: #f5f6f8; padding: 0 0.32rem 0.4rem; }
-  .infos .infos-cont { height: 4.7866666667rem; background-color: #ffffff; border-radius: 0.1066666667rem; padding: 0.1866666667rem 0.2666666667rem; }
-  .infos .infos-cont li { line-height: 0.8266666667rem; border-bottom: 1px dotted #cdcdcd; }
-  .infos .infos-cont li .txt, .infos .infos-cont li .time { display: inline-block; vertical-align: middle; }
-  .infos .infos-cont li .txt { width: 82%; }
-  .infos .infos-cont li .time { width: 12%; color: #777777; }
-  .infos .infos-cont li:last-child { border-bottom: none; }
-  .query { background-color: #f5f6f8; padding: 0 0.32rem 0.4rem; }
-  .query .query-cont { height: 4.7866666667rem; background-color: #ffffff; border-radius: 0.1066666667rem; padding: 0.1866666667rem 0.2666666667rem; }
-  .query .query-cont li { line-height: 0.8266666667rem; border-bottom: 1px dotted #cdcdcd; padding-left: 0.6933333333rem; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/icon_2.png) no-repeat left; background-size: 0.3466666667rem 0.3733333333rem; }
-  .query .query-cont li .txt, .query .query-cont li .time { display: inline-block; vertical-align: middle; }
-  .query .query-cont li .txt { width: 82%; }
-  .query .query-cont li .time { width: 12%; color: #777777; }
-  .query .query-cont li:last-child { border-bottom: none; }
-  .news-list { background-color: #f5f6f8; padding: 0.32rem; }
-  .news-list li .item { padding: 0.48rem 0.4rem; background-color: #ffffff; border-radius: 0.1066666667rem; margin-bottom: 0.32rem; }
-  .news-list li .item-l { padding: 0.1333333333rem; border: solid 0.0266666667rem #9a9a9a; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  .news-list li .item-l .l-day { width: 100%; border-bottom: 1px solid #d7d7d7; font-size: 0.48rem; text-align: center; }
-  .news-list li .item-l .l-date { font-size: 0.2933333333rem; color: #444444; }
-  .news-list li .item-r { width: 78%; }
-  .news-list li .item-r .r-title { font-size: 0.3733333333rem; margin-bottom: 0.1333333333rem; }
-  .news-list li .item-r p { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 0.32rem; color: #666666; }
-  .news-list li:hover .item { background-color: #543b89; color: #fff; }
-  .news-list li:hover .item .item-l { border: solid 0.0266666667rem #fff; }
-  .news-list li:hover .item .item-l .l-date { color: #fff; }
-  .news-list li:hover .item .item-r p { color: #fff; }
-  .appoint-form { padding: 0 0.32rem 0.4rem; background-color: #f5f6f8; }
-  .appoint-form .form-cont { padding: 0.4rem 0; background: #fff; border-radius: 0.1066666667rem; position: relative; top: -1.0666666667rem; }
-  .appoint-form .sign-in { padding: 0 0.3733333333rem; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  .appoint-form input, .appoint-form select { height: 1.0666666667rem; line-height: 1.0666666667rem; font-size: 0.3733333333rem; border-radius: 0.1333333333rem; border: none; margin-bottom: 0.2133333333rem; background-color: #f5f6f8; }
-  .appoint-form select { padding: 0 1em; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/sel.png) no-repeat #f5f6f8 94% center; background-size: 0.2266666667rem 0.1466666667rem; }
-  .appoint-form input { width: 60%; margin-right: 4%; text-indent: 1em; }
-  .appoint-form .full-line { width: 100%; margin-right: 0; }
-  .appoint-form input[type="submit"] { text-indent: 0; background-color: #ff724f; color: #fff; }
-  .appoint-form .radio { font-size: 0.3733333333rem; line-height: 1.0666666667rem; }
-  .appoint-form .radio span { padding-left: 0.64rem; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/radio_nor.png) no-repeat left center; background-size: 0.4266666667rem 0.4266666667rem; margin-right: 0.4rem; }
-  .appoint-form .radio span.sel { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/radio_sel.png) no-repeat left center; background-size: 0.4266666667rem 0.4266666667rem; }
-  .admissions { padding: 0.32rem; background-color: #f5f6f8; }
-  .admissions .admissions-cont { width: 100%; padding: 0 0.4rem; background-color: #ffffff; border-radius: 0.1066666667rem; }
-  .admissions .cont-title { font-size: 0.4rem; line-height: 0.5333333333rem; text-align: center; padding: 0.3466666667rem 0; border-bottom: 1px dotted #cdcdcd; }
-  .admissions .cont-txt { padding: 0.2666666667rem 0; }
-  .admissions .cont-txt .txt-title { color: #543b89; font-weight: bold; padding: 0.2666666667rem 0; }
-  .campus { padding: 0.32rem; background-color: #f5f6f8; }
-  .campus li { margin-bottom: 0.32rem; }
-  .lessons { padding: 0.32rem; background-color: #f5f6f8; }
-  .lessons .lessons-cont { padding: 0.2666666667rem 0.4rem; background-color: #ffffff; border-radius: 0.1066666667rem; }
-  .lessons .lessons-cont .cont-title { font-size: 0.4rem; text-align: center; border-bottom: 1px dotted #cdcdcd; padding-bottom: 0.2666666667rem; margin-bottom: 0.2666666667rem; }
-  .lessons .lessons-cont .cont-title .sub { font-size: 0.32rem; color: #666666; }
-  .lessons .lessons-cont .cont-title span { vertical-align: middle; }
-  .lessons .lessons-cont .cont-title img { height: 0.28rem; vertical-align: middle; }
-  .lessons .lessons-cont li { line-height: 0.56rem; color: #444444; }
-  .lessons .lessons-cont li .key { color: #999999; }
-  .lessons .lessons-cont li .key .empty { display: inline-block; width: 2em; height: 100%; }
-  .lessons-intro { padding: 0 0.32rem 0.4rem; background-color: #f5f6f8; }
-  .lessons-intro .lcm-title { padding-left: 0.3466666667rem; }
-  .lessons-intro .intro-cont { background-color: #ffffff; border-radius: 0.1066666667rem; padding: 0.4rem 0.5333333333rem; }
-  .lessons-intro .intro-cont p { margin-bottom: 0.1333333333rem; }
-  .teacher-list { padding: 0.32rem; background-color: #f5f6f8; }
-  .teacher-list li { margin-bottom: 0.32rem; background-color: #ffffff; border-radius: 0.1066666667rem; padding: 0.4rem 0.4rem 0.2666666667rem 0; }
-  .teacher-list li .item-l { width: 74%; }
-  .teacher-list li .item-l .l-name { font-size: 0.4266666667rem; font-weight: bold; margin-bottom: 0.1333333333rem; }
-  .teacher-list li .item-l .l-name::before { display: inline-block; content: ""; width: 0.0666666667rem; height: 0.4533333333rem; background-color: #543b89; vertical-align: middle; margin-right: 0.4rem; }
-  .teacher-list li .item-l .l-name span { vertical-align: middle; }
-  .teacher-list li .item-l .l-text { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; margin: 0 0 0.1333333333rem 0.4rem; }
-  .teacher-list li .item-l .l-text.show { display: block; }
-  .teacher-list li .item-l .fold { font-size: 0.2933333333rem; line-height: 0.5333333333rem; color: #444444; text-align: center; cursor: pointer; }
-  .teacher-list li .item-l .fold span { vertical-align: middle; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/down.png) no-repeat right center; background-size: 0.24rem 0.16rem; padding-right: 0.4rem; }
-  .teacher-list li .item-l .down { color: #4b4b4b; }
-  .teacher-list li .item-l .down span { background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/up.png) no-repeat right center; background-size: 0.24rem 0.16rem; }
-  .teacher-list li .item-r { width: 24%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-  .teacher-list li .item-r img { border-radius: 0.0666666667rem; margin-bottom: 0.24rem; }
-  .teacher-list li .item-r .r-btn { font-size: 0.32rem; line-height: 0.68rem; color: #ffffff; background-image: linear-gradient(-56deg, #ff724f 0%, #ff8d71 100%); -webkit-box-shadow: -0.04rem 0.0266666667rem 0.1733333333rem 0px rgba(255, 114, 79, 0.44); box-shadow: -0.04rem 0.0266666667rem 0.1733333333rem 0px rgba(255, 114, 79, 0.44); border-radius: 0.04rem; text-align: center; }
-  .news-ftu { padding: 0.32rem 0.32rem 0; background-color: #f5f6f8; }
-  .news-ftu .ftu-cont { background-color: #ffffff; border-radius: 0.1066666667rem; padding: 0.2666666667rem; }
-  .news-ftu .ftu-cont img { padding: 0.2666666667rem 0; }
-  .news-ftu .cont-title { font-size: 0.4266666667rem; line-height: 0.5333333333rem; }
-  .news-ftu .publish { font-size: 0.2933333333rem; line-height: 0.5333333333rem; color: #888888; border-bottom: 1px dotted #cdcdcd; padding-bottom: 0.2666666667rem; }
-  .news-ftu .publish img { height: 0.2533333333rem; vertical-align: middle; margin-right: 0.1066666667rem; padding: 0; }
-  .news-ftu .publish span { vertical-align: middle; margin-right: 0.2666666667rem; }
-  .news-ftu .sign-up { display: block; }
-  .news-ftu .subtitle { font-weight: bold; color: #3084f7; margin-bottom: 0.1333333333rem; }
-  .news-ftu .cont-page { border-top: 1px dotted #cdcdcd; margin-top: 0.2666666667rem; padding-top: 0.2666666667rem; }
-  .news-ftu .cont-page a { display: block; color: #666666; }
-  .news-ftu .cont-page span { color: #333333; }
-  .news-ftu .visit-school img { border-radius: 0.1066666667rem; }
-  .news-ftu .apply { padding: 0; }
-  .news-ftu .apply .apply-cont.pure { background: #fff; }
-  .news-ftu .apply input, .news-ftu .apply select { background-color: #f5f6f8; }
-  .news-ftu .apply input[type="submit"] { background-color: #ff724f; }
-  .news-ftu .infos { padding: 0.2666666667rem 0 0.4rem; }
-  .news-ftu .query { padding: 0 0 0.4rem; }
-  .page-body { display: none; }
+  .header {
+    height: 1.3333333333rem;
+    padding: 0 0.32rem;
+  }
+  .header .lf img {
+    padding-top: 0;
+    height: 0.72rem;
+    margin-right: 0.1333333333rem;
+    vertical-align: middle;
+  }
+  .header .subtitle {
+    vertical-align: middle;
+    font-size: 0.32rem;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  .header .rt {
+    display: none;
+  }
+
+  .school-title {
+    display: block;
+    height: 1.04rem;
+    line-height: 1.04rem;
+    background-color: #543b89;
+    font-size: 0.4rem;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .nav {
+    border-top: 1px solid #eee;
+    padding: 0 0.32rem;
+  }
+  .nav ul {
+    width: 90%;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .nav ul li {
+    display: inline-block;
+    float: none;
+    padding: 0.2133333333rem 0px;
+  }
+  .nav ul li a {
+    padding: 0 0.1333333333rem 0.2133333333rem;
+    border-right: none;
+    font-size: 0.3733333333rem;
+  }
+  .nav ul li.active {
+    background-color: #fff;
+  }
+  .nav ul li.active a {
+    color: #543b89;
+  }
+  .nav ul li.active::after {
+    display: block;
+    content: "";
+    width: 0.6rem;
+    height: 0.0666666667rem;
+    background-color: #543b89;
+    margin: 0 auto;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .wap-banner {
+    background-color: #f5f6f8;
+    padding: 0.32rem;
+    text-align: center;
+  }
+  .wap-banner a {
+    display: block;
+    width: 100%;
+  }
+  .wap-banner img {
+    border-radius: 0.1066666667rem;
+  }
+
+  .school {
+    background-color: #f5f6f8;
+    padding: 0 0.32rem 0.4rem;
+  }
+  .school .sc-head {
+    font-size: 0.3733333333rem;
+    line-height: 0.4266666667rem;
+    color: #444444;
+    padding-bottom: 0.2666666667rem;
+  }
+  .school .sc-head ul {
+    display: flex;
+  }
+  .school .sc-head li {
+    border-right: dashed 1px #4b4b4b;
+    padding: 0 0.3333333333rem;
+  }
+  .school .sc-head li.cur {
+    font-weight: bold;
+    font-size: 0.4266666667rem;
+  }
+  .school .sc-head li:last-child {
+    border-right: none;
+  }
+  .school .sc-cont {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+    padding: 0.2666666667rem 0.5333333333rem;
+  }
+  .school .sc-cont .cont-item {
+    display: none;
+  }
+  .school .sc-cont .cont-item.cur {
+    display: block;
+  }
+  .school .sc-cont ul {
+    padding-bottom: 0.2666666667rem;
+    margin-bottom: 0.2666666667rem;
+    border-bottom: 1px dotted #c1c1c1;
+  }
+  .school .sc-cont ul:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .school .sc-cont .ul-title {
+    font-size: 0.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    color: #543b89;
+    margin-bottom: 0.1333333333rem;
+  }
+  .school .sc-cont .ul-title img {
+    height: 100%;
+    margin-right: 0.1066666667rem;
+  }
+  .school .sc-cont li {
+    line-height: 0.56rem;
+    color: #444444;
+  }
+  .school .sc-cont li .key {
+    color: #999999;
+  }
+  .school .sc-cont p {
+    font-size: 0.3466666667rem;
+    text-align: justify;
+    margin-bottom: 0.1333333333rem;
+  }
+
+  .enrol {
+    background-color: #f5f6f8;
+    padding: 0 0.32rem 0.2666666667rem;
+  }
+  .enrol .enrol-title {
+    font-size: 0.4266666667rem;
+    line-height: 0.4533333333rem;
+    padding: 0 0.32rem 0.2666666667rem;
+  }
+  .enrol .enrol-cont {
+    padding: 2.16rem 0 0.56rem;
+    border-radius: 0.1066666667rem;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/bg_2.png) no-repeat center 30% #fff;
+    background-size: 90% auto;
+  }
+
+  .apply {
+    padding: 0 0.32rem 0.4rem;
+    background-color: #f5f6f8;
+  }
+  .apply .apply-cont {
+    padding: 0.4rem 0;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/bg_3.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0.1066666667rem;
+  }
+  .apply .apply-cont .cont-title {
+    font-size: 0.4266666667rem;
+    line-height: 0.4533333333rem;
+    color: #ff6600;
+    text-align: center;
+    margin-bottom: 0.2666666667rem;
+  }
+  .apply .apply-cont.pure {
+    background: #543b89;
+  }
+  .apply .apply-cont.pure .cont-title {
+    color: #ffffff;
+  }
+  .apply .apply-cont.pure .cont-title span {
+    color: #ff724f;
+  }
+  .apply .sign-in {
+    padding: 0 0.3733333333rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .apply input,
+  .apply select {
+    width: 48%;
+    height: 1.0666666667rem;
+    line-height: 1.0666666667rem;
+    font-size: 0.3733333333rem;
+    border-radius: 0.1333333333rem;
+    border: none;
+    margin-bottom: 0.2133333333rem;
+  }
+  .apply select {
+    padding: 0 1em;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/sel.png) no-repeat #fff 90% center;
+    background-size: 0.2266666667rem 0.1466666667rem;
+  }
+  .apply input {
+    margin-right: 4%;
+    text-indent: 1em;
+  }
+  .apply .full-line {
+    width: 100%;
+    margin-right: 0;
+  }
+  .apply input[type="submit"] {
+    text-indent: 0;
+    background-color: #ff8838;
+    color: #fff;
+  }
+
+  .wap-susp {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px -0.12rem 0.2666666667rem 0px rgba(145, 145, 145, 0.15);
+    border-radius: 0.4rem 0.4rem 0px 0px;
+    z-index: 200;
+  }
+  .wap-susp .susp-cont {
+    height: 1.4133333333rem;
+    padding: 0.3466666667rem 0;
+  }
+  .wap-susp .susp-cont ul {
+    height: 100%;
+  }
+  .wap-susp .susp-cont li {
+    width: 25%;
+    height: 0.72rem;
+    border-right: 1px dotted #808080;
+  }
+  .wap-susp .susp-cont li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -0.16rem;
+  }
+  .wap-susp .susp-cont li .icon {
+    display: block;
+    width: 0.4666666667rem;
+    height: 0.48rem;
+    margin-bottom: 0.1333333333rem;
+  }
+  .wap-susp .susp-cont li:first-child .icon {
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/home_nor.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .wap-susp .susp-cont li:first-child.cur .icon {
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/home_sel.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .wap-susp .susp-cont li:nth-of-type(2) .icon {
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/open_nor.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .wap-susp .susp-cont li:nth-of-type(2).cur .icon {
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/open_sel.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .wap-susp .susp-cont li:nth-of-type(3) .icon {
+    width: 0.52rem;
+    height: 0.52rem;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/visit_nor.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .wap-susp .susp-cont li:nth-of-type(3).cur .icon {
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/visit_sel.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .wap-susp .susp-cont li:nth-of-type(4) .icon {
+    width: 0.52rem;
+    height: 0.5333333333rem;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/tel_nor.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .wap-susp .susp-cont li:nth-of-type(4).cur .icon {
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/tel_sel.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .wap-susp .susp-cont li:last-child {
+    border-right: none;
+  }
+
+  .load-more {
+    height: 1.0666666667rem;
+    line-height: 1.0666666667rem;
+    background-color: #e5e5e5;
+    border-radius: 0.1066666667rem;
+    font-size: 0.3733333333rem;
+    color: #444444;
+    text-align: center;
+  }
+
+  .issue-list {
+    background-color: #f5f6f8;
+    padding: 0.32rem 0.32rem;
+  }
+  .issue-list li {
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+    padding: 0 0.2933333333rem 0.2666666667rem;
+    line-height: 1.5;
+    margin-bottom: 0.32rem;
+  }
+  .issue-list li .item-w {
+    font-size: 0.4rem;
+    border-bottom: 1px dotted #cdcdcd;
+    padding: 0.2666666667rem 0 0.2666666667rem 0.6933333333rem;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/icon_2.png) no-repeat left 0.4rem;
+    background-size: 0.3466666667rem auto;
+  }
+  .issue-list li .item-d {
+    height: 7em;
+    padding: 0.2666666667rem 0 0 0.6933333333rem;
+    margin-bottom: 0.2666666667rem;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .issue-list li .item-d.show {
+    display: block;
+    height: auto;
+  }
+  .issue-list li .fold {
+    font-size: 0.2933333333rem;
+    line-height: 0.5333333333rem;
+    color: #444444;
+    text-align: center;
+    cursor: pointer;
+  }
+  .issue-list li .fold span {
+    vertical-align: middle;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/down.png) no-repeat right center;
+    background-size: 0.24rem 0.16rem;
+    padding-right: 0.4rem;
+  }
+  .issue-list li .down {
+    color: #4b4b4b;
+  }
+  .issue-list li .down span {
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/up.png) no-repeat right center;
+    background-size: 0.24rem 0.16rem;
+  }
+
+  .lcm-title {
+    font-size: 0.4266666667rem;
+    line-height: 0.4533333333rem;
+    margin-bottom: 0.2666666667rem;
+  }
+  .lcm-title span {
+    color: #543b89;
+  }
+
+  .home-lcm {
+    background-color: #f5f6f8;
+    padding: 0 0.32rem 0.4rem;
+  }
+  .home-lcm .lcm-cont {
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+    padding: 0.4rem;
+  }
+  .home-lcm .lcm-cont ul {
+    border-bottom: 1px dotted #c1c1c1;
+    padding-bottom: 0.2666666667rem;
+  }
+  .home-lcm .lcm-cont li {
+    line-height: 0.56rem;
+    color: #444444;
+  }
+  .home-lcm .lcm-cont li .key {
+    color: #999999;
+  }
+  .home-lcm .lcm-cont li .key .empty {
+    display: inline-block;
+    width: 2em;
+    height: 100%;
+  }
+  .home-lcm .lcm-cont .cont-text {
+    line-height: 0.56rem;
+    letter-spacing: 0px;
+    color: #444444;
+    padding: 0.2666666667rem 0.2133333333rem 0;
+    text-align: justify;
+  }
+  .home-lcm .lcm-cont .cont-text p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .home-lcm .lcm-cont .cont-text p.show {
+    display: block;
+  }
+  .home-lcm .lcm-cont .cont-text .detail {
+    color: #ff724f;
+  }
+  .home-lcm .cont-btn {
+    padding-top: 0.2666666667rem;
+  }
+  .home-lcm .cont-btn a {
+    width: 48%;
+    font-size: 0.3733333333rem;
+    height: 1.0666666667rem;
+    line-height: 1.0666666667rem;
+    box-shadow: -0.04rem 0.0266666667rem 0.1733333333rem 0px rgba(255, 114, 79, 0.44);
+    border-radius: 0.08rem;
+    border: solid 1px #ff7653;
+    text-align: center;
+    color: #ff724f;
+  }
+  .home-lcm .cont-btn a.active {
+    background-image: linear-gradient(-30deg, #ff724f 0%, #fe8d72 100%);
+    color: #fff;
+  }
+  .home-lcm .cont-course {
+    border-bottom: 1px dotted #c1c1c1;
+    padding-bottom: 0.2666666667rem;
+  }
+  .home-lcm .cont-course .course-l {
+    width: 46%;
+  }
+  .home-lcm .cont-course .course-r {
+    width: 48%;
+  }
+  .home-lcm .cont-course .course-r ul {
+    border-bottom: none;
+  }
+  .home-lcm .cont-course .course-r ul li .star {
+    height: 0.28rem;
+    vertical-align: middle;
+  }
+
+  .good {
+    background-color: #f5f6f8;
+    padding: 0 0.32rem 0.4rem;
+  }
+  .good .good-cont ul {
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+  .good .good-cont ul li {
+    display: inline-block;
+    width: 5.08rem;
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+    margin-right: 0.2666666667rem;
+  }
+  .good .good-cont ul li p {
+    white-space: initial;
+  }
+  .good .good-cont ul li.active {
+    background-color: #ff8838;
+    box-shadow: -0.0133333333rem 0.1066666667rem 0.0933333333rem 0px rgba(255, 136, 56, 0.3);
+    color: #fff;
+  }
+  .good .good-cont ul li.active .item-title::after {
+    background-color: #fff;
+  }
+  .good .good-cont ul .cont-item {
+    padding: 0.4rem 0.2666666667rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .good .good-cont ul .cont-item img {
+    width: 0.8rem;
+    height: 0.68rem;
+    margin-bottom: 0.2rem;
+  }
+  .good .good-cont ul .cont-item .item-title {
+    font-size: 0.4rem;
+    padding-bottom: 0.2133333333rem;
+    margin-bottom: 0.2666666667rem;
+    position: relative;
+  }
+  .good .good-cont ul .cont-item .item-title::after {
+    display: inline-block;
+    content: "";
+    width: 0.6666666667rem;
+    height: 1px;
+    background-color: #ff8838;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .teacher-lcm {
+    background-color: #f5f6f8;
+    padding: 0 0.32rem 0.4rem;
+  }
+  .teacher-lcm .tea-cont {
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+    padding: 0.32rem 0.2666666667rem;
+  }
+  .teacher-lcm .item-l {
+    width: 40%;
+  }
+  .teacher-lcm .item-l img {
+    width: 100%;
+  }
+  .teacher-lcm .item-r {
+    width: 56%;
+  }
+  .teacher-lcm .item-r .r-title {
+    font-size: 0.4rem;
+    margin-bottom: 0.1333333333rem;
+  }
+  .teacher-lcm .item-r p {
+    font-size: 0.32rem;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .teacher-lcm .tab-detail {
+    margin-bottom: 0.2666666667rem;
+  }
+  .teacher-lcm .tab-detail li {
+    display: none;
+  }
+  .teacher-lcm .tab-detail li.cur {
+    display: flex;
+  }
+  .teacher-lcm .tab-head li {
+    width: 18.6%;
+  }
+  .teacher-lcm .tab-head li.cur {
+    border: solid 1px #ff8838;
+  }
+  .teacher-lcm .tab-head .more {
+    width: 18.6%;
+    background-color: #ededed;
+  }
+
+  .scene {
+    background-color: #f5f6f8;
+    padding: 0 0.32rem 0.4rem;
+    position: relative;
+  }
+  .scene .scene-cont {
+    padding: 0.3466666667rem;
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+  }
+  .scene .swiper1 {
+    padding-bottom: 0.5066666667rem;
+  }
+  .scene .swiper1 .swiper-pagination-bullets {
+    bottom: 0;
+  }
+  .scene .swiper1 .swiper-pagination-bullet-active {
+    width: 0.32rem;
+    border-radius: 0.16rem;
+    background-color: #543b89;
+  }
+  .scene .swiper1-arrows {
+    width: 0.5466666667rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border-radius: 0.04rem;
+    opacity: 0.83;
+    color: #fff;
+    text-align: center;
+    background-color: #ff8838;
+    font-size: 0.48rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .scene .swiper-button-disabled {
+    background-color: #363636;
+  }
+  .scene .prev {
+    left: 0;
+  }
+  .scene .next {
+    right: 0;
+  }
+
+  .infos {
+    background-color: #f5f6f8;
+    padding: 0 0.32rem 0.4rem;
+  }
+  .infos .infos-cont {
+    height: 4.7866666667rem;
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+    padding: 0.1866666667rem 0.2666666667rem;
+  }
+  .infos .infos-cont li {
+    line-height: 0.8266666667rem;
+    border-bottom: 1px dotted #cdcdcd;
+  }
+  .infos .infos-cont li .txt,
+  .infos .infos-cont li .time {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .infos .infos-cont li .txt {
+    width: 82%;
+  }
+  .infos .infos-cont li .time {
+    width: 12%;
+    color: #777777;
+  }
+  .infos .infos-cont li:last-child {
+    border-bottom: none;
+  }
+
+  .query {
+    background-color: #f5f6f8;
+    padding: 0 0.32rem 0.4rem;
+  }
+  .query .query-cont {
+    height: 4.7866666667rem;
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+    padding: 0.1866666667rem 0.2666666667rem;
+  }
+  .query .query-cont li {
+    line-height: 0.8266666667rem;
+    border-bottom: 1px dotted #cdcdcd;
+    padding-left: 0.6933333333rem;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/icon_2.png) no-repeat left;
+    background-size: 0.3466666667rem 0.3733333333rem;
+  }
+  .query .query-cont li .txt,
+  .query .query-cont li .time {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .query .query-cont li .txt {
+    width: 82%;
+  }
+  .query .query-cont li .time {
+    width: 12%;
+    color: #777777;
+  }
+  .query .query-cont li:last-child {
+    border-bottom: none;
+  }
+
+  .news-list {
+    background-color: #f5f6f8;
+    padding: 0.32rem;
+  }
+  .news-list li .item {
+    padding: 0.48rem 0.4rem;
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+    margin-bottom: 0.32rem;
+  }
+  .news-list li .item-l {
+    padding: 0.1333333333rem;
+    border: solid 0.0266666667rem #9a9a9a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-list li .item-l .l-day {
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+    font-size: 0.48rem;
+    text-align: center;
+  }
+  .news-list li .item-l .l-date {
+    font-size: 0.2933333333rem;
+    color: #444444;
+  }
+  .news-list li .item-r {
+    width: 78%;
+  }
+  .news-list li .item-r .r-title {
+    font-size: 0.3733333333rem;
+    margin-bottom: 0.1333333333rem;
+  }
+  .news-list li .item-r p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 0.32rem;
+    color: #666666;
+  }
+  .news-list li:hover .item {
+    background-color: #543b89;
+    color: #fff;
+  }
+  .news-list li:hover .item .item-l {
+    border: solid 0.0266666667rem #fff;
+  }
+  .news-list li:hover .item .item-l .l-date {
+    color: #fff;
+  }
+  .news-list li:hover .item .item-r p {
+    color: #fff;
+  }
+
+  .appoint-form {
+    padding: 0 0.32rem 0.4rem;
+    background-color: #f5f6f8;
+  }
+  .appoint-form .form-cont {
+    padding: 0.4rem 0;
+    background: #fff;
+    border-radius: 0.1066666667rem;
+    position: relative;
+    top: -1.0666666667rem;
+  }
+  .appoint-form .sign-in {
+    padding: 0 0.3733333333rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .appoint-form input,
+  .appoint-form select {
+    height: 1.0666666667rem;
+    line-height: 1.0666666667rem;
+    font-size: 0.3733333333rem;
+    border-radius: 0.1333333333rem;
+    border: none;
+    margin-bottom: 0.2133333333rem;
+    background-color: #f5f6f8;
+  }
+  .appoint-form select {
+    padding: 0 1em;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/sel.png) no-repeat #f5f6f8 94% center;
+    background-size: 0.2266666667rem 0.1466666667rem;
+  }
+  .appoint-form input {
+    width: 60%;
+    margin-right: 4%;
+    text-indent: 1em;
+  }
+  .appoint-form .full-line {
+    width: 100%;
+    margin-right: 0;
+  }
+  .appoint-form input[type="submit"] {
+    text-indent: 0;
+    background-color: #ff724f;
+    color: #fff;
+  }
+  .appoint-form .radio {
+    font-size: 0.3733333333rem;
+    line-height: 1.0666666667rem;
+  }
+  .appoint-form .radio span {
+    padding-left: 0.64rem;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/radio_nor.png) no-repeat left center;
+    background-size: 0.4266666667rem 0.4266666667rem;
+    margin-right: 0.4rem;
+  }
+  .appoint-form .radio span.sel {
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/radio_sel.png) no-repeat left center;
+    background-size: 0.4266666667rem 0.4266666667rem;
+  }
+
+  .admissions {
+    padding: 0.32rem;
+    background-color: #f5f6f8;
+  }
+  .admissions .admissions-cont {
+    width: 100%;
+    padding: 0 0.4rem;
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+  }
+  .admissions .cont-title {
+    font-size: 0.4rem;
+    line-height: 0.5333333333rem;
+    text-align: center;
+    padding: 0.3466666667rem 0;
+    border-bottom: 1px dotted #cdcdcd;
+  }
+  .admissions .cont-txt {
+    padding: 0.2666666667rem 0;
+  }
+  .admissions .cont-txt .txt-title {
+    color: #543b89;
+    font-weight: bold;
+    padding: 0.2666666667rem 0;
+  }
+
+  .campus {
+    padding: 0.32rem;
+    background-color: #f5f6f8;
+  }
+  .campus li {
+    margin-bottom: 0.32rem;
+  }
+
+  .lessons {
+    padding: 0.32rem;
+    background-color: #f5f6f8;
+  }
+  .lessons .lessons-cont {
+    padding: 0.2666666667rem 0.4rem;
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+  }
+  .lessons .lessons-cont .cont-title {
+    font-size: 0.4rem;
+    text-align: center;
+    border-bottom: 1px dotted #cdcdcd;
+    padding-bottom: 0.2666666667rem;
+    margin-bottom: 0.2666666667rem;
+  }
+  .lessons .lessons-cont .cont-title .sub {
+    font-size: 0.32rem;
+    color: #666666;
+  }
+  .lessons .lessons-cont .cont-title span {
+    vertical-align: middle;
+  }
+  .lessons .lessons-cont .cont-title img {
+    height: 0.28rem;
+    vertical-align: middle;
+  }
+  .lessons .lessons-cont li {
+    line-height: 0.56rem;
+    color: #444444;
+  }
+  .lessons .lessons-cont li .key {
+    color: #999999;
+  }
+  .lessons .lessons-cont li .key .empty {
+    display: inline-block;
+    width: 2em;
+    height: 100%;
+  }
+
+  .lessons-intro {
+    padding: 0 0.32rem 0.4rem;
+    background-color: #f5f6f8;
+  }
+  .lessons-intro .lcm-title {
+    padding-left: 0.3466666667rem;
+  }
+  .lessons-intro .intro-cont {
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+    padding: 0.4rem 0.5333333333rem;
+  }
+  .lessons-intro .intro-cont p {
+    margin-bottom: 0.1333333333rem;
+  }
+
+  .teacher-list {
+    padding: 0.32rem;
+    background-color: #f5f6f8;
+  }
+  .teacher-list li {
+    margin-bottom: 0.32rem;
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+    padding: 0.4rem 0.4rem 0.2666666667rem 0;
+  }
+  .teacher-list li .item-l {
+    width: 74%;
+  }
+  .teacher-list li .item-l .l-name {
+    font-size: 0.4266666667rem;
+    font-weight: bold;
+    margin-bottom: 0.1333333333rem;
+  }
+  .teacher-list li .item-l .l-name::before {
+    display: inline-block;
+    content: "";
+    width: 0.0666666667rem;
+    height: 0.4533333333rem;
+    background-color: #543b89;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+  }
+  .teacher-list li .item-l .l-name span {
+    vertical-align: middle;
+  }
+  .teacher-list li .item-l .l-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin: 0 0 0.1333333333rem 0.4rem;
+  }
+  .teacher-list li .item-l .l-text.show {
+    display: block;
+  }
+  .teacher-list li .item-l .fold {
+    font-size: 0.2933333333rem;
+    line-height: 0.5333333333rem;
+    color: #444444;
+    text-align: center;
+    cursor: pointer;
+  }
+  .teacher-list li .item-l .fold span {
+    vertical-align: middle;
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/down.png) no-repeat right center;
+    background-size: 0.24rem 0.16rem;
+    padding-right: 0.4rem;
+  }
+  .teacher-list li .item-l .down {
+    color: #4b4b4b;
+  }
+  .teacher-list li .item-l .down span {
+    background: url(https://img.thea.cn/public/platform/thea/202001/hbj/wace/images/up.png) no-repeat right center;
+    background-size: 0.24rem 0.16rem;
+  }
+  .teacher-list li .item-r {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+  }
+  .teacher-list li .item-r img {
+    border-radius: 0.0666666667rem;
+    margin-bottom: 0.24rem;
+  }
+  .teacher-list li .item-r .r-btn {
+    font-size: 0.32rem;
+    line-height: 0.68rem;
+    color: #ffffff;
+    background-image: linear-gradient(-56deg, #ff724f 0%, #ff8d71 100%);
+    box-shadow: -0.04rem 0.0266666667rem 0.1733333333rem 0px rgba(255, 114, 79, 0.44);
+    border-radius: 0.04rem;
+    text-align: center;
+  }
+
+  .news-ftu {
+    padding: 0.32rem 0.32rem 0;
+    background-color: #f5f6f8;
+  }
+  .news-ftu .ftu-cont {
+    background-color: #ffffff;
+    border-radius: 0.1066666667rem;
+    padding: 0.2666666667rem;
+  }
+  .news-ftu .ftu-cont img {
+    padding: 0.2666666667rem 0;
+  }
+  .news-ftu .cont-title {
+    font-size: 0.4266666667rem;
+    line-height: 0.5333333333rem;
+  }
+  .news-ftu .publish {
+    font-size: 0.2933333333rem;
+    line-height: 0.5333333333rem;
+    color: #888888;
+    border-bottom: 1px dotted #cdcdcd;
+    padding-bottom: 0.2666666667rem;
+  }
+  .news-ftu .publish img {
+    height: 0.2533333333rem;
+    vertical-align: middle;
+    margin-right: 0.1066666667rem;
+    padding: 0;
+  }
+  .news-ftu .publish span {
+    vertical-align: middle;
+    margin-right: 0.2666666667rem;
+  }
+  .news-ftu .sign-up {
+    display: block;
+  }
+  .news-ftu .subtitle {
+    font-weight: bold;
+    color: #3084f7;
+    margin-bottom: 0.1333333333rem;
+  }
+  .news-ftu .cont-page {
+    border-top: 1px dotted #cdcdcd;
+    margin-top: 0.2666666667rem;
+    padding-top: 0.2666666667rem;
+  }
+  .news-ftu .cont-page a {
+    display: block;
+    color: #666666;
+  }
+  .news-ftu .cont-page span {
+    color: #333333;
+  }
+  .news-ftu .visit-school img {
+    border-radius: 0.1066666667rem;
+  }
+  .news-ftu .apply {
+    padding: 0;
+  }
+  .news-ftu .apply .apply-cont.pure {
+    background: #fff;
+  }
+  .news-ftu .apply input,
+  .news-ftu .apply select {
+    background-color: #f5f6f8;
+  }
+  .news-ftu .apply input[type="submit"] {
+    background-color: #ff724f;
+  }
+  .news-ftu .infos {
+    padding: 0.2666666667rem 0 0.4rem;
+  }
+  .news-ftu .query {
+    padding: 0 0 0.4rem;
+  }
+
+  .page-body {
+    display: none;
+  }
+
   /*面包屑*/
-  .page-path { display: none; }
-  .main { display: none; }
-  .friend { display: none; }
-  .footsusp { display: none; }
-  #footer { display: none; }
+  .page-path {
+    display: none;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .friend {
+    display: none;
+  }
+
+  .footsusp {
+    display: none;
+  }
+
+  #footer {
+    display: none;
+  }
+
   /*thea左侧自定义漂浮*/
-  #msRfloat { display: none; } }
-#isMobile { display: none; }
+  #msRfloat {
+    display: none;
+  }
+}
+#isMobile {
+  display: none;
+}
 
 /*# sourceMappingURL=index.css.map */

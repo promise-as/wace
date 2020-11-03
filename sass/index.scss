@@ -795,7 +795,7 @@ ul {
         color: #ff8838;
         padding: 20px 0 0;
         li {
-          @extend %point-a;
+          // @extend %point-a;
           margin-bottom: 20px;
           &:last-child {
             margin-bottom: 0;
@@ -1973,12 +1973,14 @@ ul {
         background-size: pr(26px) auto;
       }
       .item-d {
-        color: #666666;
+        height: 7em;
         padding: pr(20px) 0 0 pr(52px);
         margin-bottom: pr(20px);
+        color: #666666;
         @include ells(3);
         &.show {
           display: block;
+          height: auto;
         }
       }
       .fold {
@@ -2741,4 +2743,6 @@ ul {
 }
 
 // 2020-01-20 author: Huangchong
-#isMobile{ display: none; }
+#isMobile {
+  display: none;
+}
